@@ -1,0 +1,14 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBake</title>
+    <link>http://ieugen.ro</link>
+    <atom:link href="http://ieugen.ro/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <description>JBake Bootstrap Template</description>
+    <language>en-gb</language>
+    <pubDate>L, 8 Feb 2016 14:38:28 +0200</pubDate>
+    <lastBuildDate>L, 8 Feb 2016 14:38:28 +0200</lastBuildDate>
+
+    
+
+  </channel> 
+</rss>
