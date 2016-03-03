@@ -1,14 +1,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JBake</title>
-    <link>http://ieugen.ro</link>
-    <atom:link href="http://ieugen.ro/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>https://ieugen.ro</link>
+    <atom:link href="https://ieugen.ro/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Mi, 10 Feb 2016 12:50:08 +0200</pubDate>
-    <lastBuildDate>Mi, 10 Feb 2016 12:50:08 +0200</lastBuildDate>
+    <pubDate>J, 3 Mar 2016 07:29:42 +0200</pubDate>
+    <lastBuildDate>J, 3 Mar 2016 07:29:42 +0200</lastBuildDate>
 
-    
+    <item>
+      <title>Articol exemplu</title>
+      <link>https://ieugen.ro/blog/2016/cum-sa-folosesti-templateuri.html</link>
+      <pubDate>D, 14 Feb 2016 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2016/cum-sa-folosesti-templateuri.html</guid>
+      <description>&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;ce_sunt_template_urile&amp;quot;&amp;gt;Ce sunt template-urile&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;tipuri_de_șabloane&amp;quot;&amp;gt;Tipuri de șabloane&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Există mai multe tipuri.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;admonitionblock warning&amp;quot;&amp;gt;
+&amp;lt;table&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td class=&amp;quot;icon&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;title&amp;quot;&amp;gt;Warning&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;content&amp;quot;&amp;gt;
+Un șablon poate avea mai multe tipuri.
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;referințe&amp;quot;&amp;gt;Referințe&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;ulist&amp;quot;&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot; class=&amp;quot;bare&amp;quot;&amp;gt;http://example.org&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot;&amp;gt;Example.org&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;</description>
+    </item>
 
-  </channel> 
+  </channel>
 </rss>
