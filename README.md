@@ -36,6 +36,21 @@ or for developing your website with `hugo server --buildDrafts --buildFuture`, u
 npm run preview
 ```
 
+### Publish to gh-pages
+
+
+Read details here http://pressedpixels.com/articles/deploying-to-github-pages-with-git-worktree/
+
+Use `git worktree prune` to cleanup existing worktrees.
+
+```bash
+    git worktree add publish-gh-pages gh-pages
+    npm run build
+    cd publish-gh-pages && rm -rf * && cp -r ../dist/* ./
+```
+
+
+
 Then visit http://localhost:3000/ _- or a new browser windows popped-up already -_ to preview your new website. Webpack Dev Server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
 
 ### :package: Static build
