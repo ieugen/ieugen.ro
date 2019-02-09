@@ -20,7 +20,7 @@
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js --hot --inline",
     "publish": "run-p publish:*",
     "publish:prepare": "rm -rf publish-gh-pages && git worktree prune && git worktree add publish-gh-pages gh-pages",
-    "publish:build": "npm run build && cd publish-gh-pages && rm -rf * && cp -r ../dist/* ./"    
+    "publish:build": "npm run build && cd publish-gh-pages && rm -rf * && cp -r ../dist/* ./"
   },
   "author": "",
   "license": "MIT",

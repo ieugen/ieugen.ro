@@ -1,9 +1,58 @@
 {{ define "main" }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
+<div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
 
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
+      <div class="row">
+        <div class="ten wide column">
+          <h2 class="ui header">Open Source Hacker/Consultant</h2>
+          <p>I'm a Open Source Hacker and Consultant based in Bucharest, Romania.</p>
+          <p>I volunteer with a few open source organizations and lead
+            <a href="http://bjug.ro/">BJUG</a> the local Java User
+          Group.</p>
+          <p>You can contact me via <a href="mailto:eu@ieugen.ro">email</a></p>
+          <p>Things you might find interesting are my <a href="http://github.com/ieugen">github</a> account,
+             my <a href="assets/IoanEugenStan.pdf">CV</a> or my
+          <!-- <a href="https://ieugen.ro/blog">blog</a> where I write from time to time.</p> -->
+        </div>
+        <div class="four wide right floated column">
+          <img class="ui small image" alt="Ioan Eugen Stan Hackergotchi" src="img/profile.png" />
+        </div>
+      </div>
+      <div class="ui divider"></div>
 
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
+      <div class="row">
+        <div class="ui five column centered grid">
+          <div class="column">
+            <div class="ui segment">
+              <a class="ui small image" href="http://bjug.ro/">
+                   <img alt="BJUG founder and leader" src="img/portfolio/bjug.png" />
+              </a>
+
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui segment">
+              <a class="ui small small" href="http://apache.org/">
+                   <img alt="Apache Software Foundation Committer and PMC for Apache James" src="img/portfolio/apache-white.png" />
+              </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui segment">
+              <a class="ui small image" href="http://debian.org/">
+                   <img alt="Debian contributor and supporter" src="img/portfolio/debian.png" />
+              </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui segment">
+              <a class="ui small image" href="https://ops4j1.jira.com/wiki/display/ops4j/Open+Participation+Software+for+Java">
+                   <img alt="OPS4j Committer" src="img/portfolio/ops4j_logo_final.png" width="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 {{ end }}
