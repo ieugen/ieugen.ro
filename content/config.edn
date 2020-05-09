@@ -1,0 +1,34 @@
+{:site-title                   "(defn Eugen-Stan [_] (awesome))"
+ :author                       "(Eugen Stan)"
+ :description                  "A place to dump the extra stuff my brain can't handle."
+ :site-url                     "https://www.ieugen.ro/"
+ :post-root                    "posts"
+ :page-root                    "pages"
+ :post-root-uri                "posts-output"
+ :page-root-uri                "pages-output"
+ :tag-root-uri                 "tags-output"
+ :author-root-uri              "authors-output"
+ :public-dest                  "site-build"
+ :blog-prefix                  "/blog"
+ :rss-name                     "feed.xml"
+ :rss-filters                  ["cryogen"]
+ :recent-posts                 3
+ :post-date-format             "yyyy-MM-dd"
+ :archive-group-format         "yyyy MMMM"
+ :sass-src                     []
+ :sass-path                    "sass"
+ :theme                        "ieugen.ro"
+ :resources                    ["img"]
+ :keep-files                   [".git"]
+ :disqus?                      false
+ :disqus-shortname             ""
+ :ignored-files                [#"\.#.*" #".*\.swp$"]
+ :previews?                    false
+ :posts-per-page               5
+ :blocks-per-preview           2
+ :clean-urls                   :trailing-slash
+ :collapse-subdirs?            false
+ :hide-future-posts?           true
+ :klipse                       {:settings {:selector ".klipse-cljs"}}
+ :description-include-elements #{:p :h1 :h2 :h3 :h4 :h5 :h6}
+ :debug?                       false}
