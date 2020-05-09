@@ -9,10 +9,7 @@
     {% endblock %}
     <link rel="canonical" href="{{site-url}}{{uri}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700" rel="stylesheet"
-          type="text/css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
 
     {% if any page.klipse post.klipse %}
@@ -20,83 +17,163 @@
     {% endif %}
 
     {% style "css/screen.css" %}
+
+    <style type="text/css">
+
+        .hidden.menu {
+          display: none;
+        }
+
+        .masthead.segment {
+          min-height: 160px;
+          padding: 1em 0em;
+        }
+        .masthead .logo.item img {
+          margin-right: 1em;
+        }
+        .masthead .ui.menu .ui.button {
+          margin-left: 0.5em;
+        }
+        .masthead h1.ui.header {
+          margin-top: 3em;
+          margin-bottom: 0em;
+          font-size: 4em;
+          font-weight: normal;
+        }
+        .masthead h2 {
+          font-size: 1.7em;
+          font-weight: normal;
+        }
+
+        .ui.vertical.stripe {
+          padding: 8em 0em;
+        }
+        .ui.vertical.stripe h3 {
+          font-size: 2em;
+        }
+        .ui.vertical.stripe .button + h3,
+        .ui.vertical.stripe p + h3 {
+          margin-top: 3em;
+        }
+        .ui.vertical.stripe .floated.image {
+          clear: both;
+        }
+        .ui.vertical.stripe p {
+          font-size: 1.33em;
+        }
+        .ui.vertical.stripe .horizontal.divider {
+          margin: 3em 0em;
+        }
+
+        .quote.stripe.segment {
+          padding: 0em;
+        }
+        .quote.stripe.segment .grid .column {
+          padding-top: 5em;
+          padding-bottom: 5em;
+        }
+
+        .footer.segment {
+          padding: 5em 0em;
+        }
+
+        .secondary.pointing.menu .toc.item {
+          display: none;
+        }
+
+        @media only screen and (max-width: 700px) {
+          .ui.fixed.menu {
+            display: none !important;
+          }
+          .secondary.pointing.menu .item,
+          .secondary.pointing.menu .menu {
+            display: none;
+          }
+          .secondary.pointing.menu .toc.item {
+            display: block;
+          }
+          .masthead.segment {
+            min-height: 350px;
+          }
+          .masthead h1.ui.header {
+            font-size: 2em;
+            margin-top: 1.5em;
+          }
+          .masthead h2 {
+            margin-top: 0.5em;
+            font-size: 1.5em;
+          }
+        }
+
+        .ui.sidebar {
+            will-change: auto !important;
+        }
+
+      </style>
 </head>
-<body>
+<body class="pushable">
 
+<!-- Following Menu -->
+<div class="ui top fixed hidden three item menu">
+    <div class="ui container">
+        <a href="{{index-uri}}" class="item">
+            <img class="logo" src="{{index-uri}}img/logos/ieugen-logo.png">
+        Home
+        </a>
+        <a href="#" class="item">About</a>
+        <a href="#" class="item">Subscribe</a>
+    </div>
+</div>
 
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{index-uri}}">{{title}}</a>
+  <!-- Sidebar Menu -->
+  <div class="ui vertical sidebar menu">
+        <a href="{{index-uri}}" class="item">Home</a>
+        <a href="#" class="item">About</a>
+        <a href="#" class="item">Subscribe</a>>
+  </div>
+
+<div class="pusher">
+    <div class="ui vertical masthead center aligned segment">
+        <div class="ui text container">
+            <h1 class="header">
+                <img class="ui middle aligned tiny image logo" src="{{index-uri}}img/logos/ieugen-logo.png">
+                <a href="{{index-uri}}" class="">
+                    {{title}}
+                </a>
+            </h1>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li {% if home %} class="active" {% endif %}><a href="{{index-uri}}">Home</a></li>
-                <li
-                {% if archives %} class="active" {% endif %}><a href="{{archives-uri}}">Archives</a></li>
-                {% for nav-page in navbar-pages %}
-                <li
-                {%ifequal page.uri nav-page.uri %} class="active" {% endifequal %}>
-                <a href="{{nav-page.uri}}">{{nav-page.title}}</a>
-                </li>
-                {% endfor %}
-                <li><a href="{{rss-uri}}">RSS</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        More <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class="dropdown-header">Links</li>
-                        <!-- <li><a href="http://cryogenweb.org/docs/home.html">Cryogen Docs</a></li>
-                        <li><a href="https://carmen.la/blog/archives/">Carmen's Blog</a></li> -->
-                        {% for page in sidebar-pages %}
-                        <li><a href="{{page.uri}}">{{page.title}}</a></li>
-                        {% endfor %}
-
-                        {% if latest-posts|not-empty %}
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Recent Posts</li>
-                        {% for post in latest-posts %}
-                        <li><a href="{{post.uri}}">{{post.title}}</a></li>
-                        {% endfor %}
-                        {% endif %}
-
-                        {% if tags|not-empty %}
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Tags</li>
-                        {% for tag in tags %}
-                        <li><a href="{{tag.uri}}">{{tag.name}}</a></li>
-                        {% endfor %}
-                        {% endif %}
-                    </ul>
-                </li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-</nav>
-
-
-<div class="container">
-
-
-    <div class="row">
-        <div class="col-lg-12">
+        <div class="ui top three item menu">
+            <div class="ui container">
+                <a href="{{index-uri}}" class="item">
+                <img class="logo" src="{{index-uri}}img/logos/ieugen-logo.png">
+                Home
+                </a>
+                <a href="#" class="item">About</a>
+                <a href="#" class="item">Subscribe</a>
+            </div>
+        </div>
+    </div>
+    <div class="ui vertical segment">
+        <div class="ui container">
             <div id="content">
                 {% block content %}
                 {% endblock %}
             </div>
         </div>
     </div>
-    <footer>Copyright &copy; {{today|date:yyyy}} {{author}}
-        <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
+
+    <footer class="ui inverted vertical footer segment">
+        <div>Copyright &copy; {{today|date:yyyy}} {{author}}
+            <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p>
+        </div>
+    </footer>
 </div>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+
+<!-- You MUST include jQuery before Fomantic -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+
 {% script "js/highlight.pack.js" %}
 <script>hljs.initHighlightingOnLoad();</script>
 {% if any page.klipse post.klipse %}
@@ -109,5 +186,30 @@
     <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
     <!-- <script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script> -->
 {% endif %}
+
+<script>
+    $(document)
+      .ready(function() {
+
+        // fix menu when passed
+        $('.masthead')
+          .visibility({
+            once: false,
+            onBottomPassed: function() {
+              $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function() {
+              $('.fixed.menu').transition('fade out');
+            }
+          })
+        ;
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+      })
+    ;
+    </script>
 </body>
 </html>
