@@ -10,7 +10,7 @@
    [cryogen-core.compiler :refer [compile-assets-timed]]
    [cryogen-core.config :refer [resolve-config]]
    [cryogen-core.io :refer [path]]
-  ;;  [clj-livereload.server :as live-reload]
+   [clj-livereload.server :as live-reload]
    ))
 
 (defn init []
@@ -19,9 +19,9 @@
   (let [ignored-files (-> (resolve-config) :ignored-files)]
     (start-watcher! "content" ignored-files compile-assets-timed)
     (start-watcher! "themes" ignored-files compile-assets-timed)
-    ;; (println "Start Live Reload")
-    ;; (live-reload/start! {:paths ["content", "themes", "public"]
-    ;;                      :debug? true})
+    (println "Start Live Reload")
+    (live-reload/start! {:paths ["content", "themes", "public"]
+                         :debug? true})
     )
   )
 

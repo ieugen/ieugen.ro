@@ -9,7 +9,7 @@
                            [ring-server "0.5.0"]
                            [cryogen-asciidoc "0.1.5"]
                            [cryogen-core "0.3.1"]
-                     ;;       [clj-livereload "0.2.0"]
+                           [clj-livereload "0.2.0"]
                            ]
             :plugins [[lein-ring "0.12.5"]]
             :main cryogen.core

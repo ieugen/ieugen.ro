@@ -74,24 +74,33 @@
     <footer class="ui inverted vertical footer segment">
         <div class="ui container">
             <div class="ui stackable inverted divided equal height grid">
-                <div class="three wide column">
+                <div class="four wide column">
                     <h4 class="ui inverted header">About</h4>
                     <div class="ui inverted linked list">
-                        <a href="" class="item"></a>
+                        <a class="item" href="{{index-uri}}sitemap.xml" >Sitemap</a>
+                        <a class="item" href="{{index-uri}}sitemap.xml" >License</a>
+                        <a class="item" href="{{index-uri}}sitemap.xml" >Privacy Policy</a>
+                        <a class="item" href="{{index-uri}}sitemap.xml" >Contact</a>
                     </div>
                 </div>
-                <div class="three wide column">
-                    <h4 class="ui inverted header">Services</h4>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Projects</h4>
+                    <div class="ui inverted linked list">
+                        <a href="{{index-uri}}" class="item">Zețar</a>
+                    </div>
                 </div>
-
-                <div class="three wide column">
-                    <h4 class="ui inverted header">Thanks</h4>
-                    <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p>
+                <div class="eight wide column">
+                    <h4 class="ui inverted header">Need my help?</h4>
+                    <p>I am looking for challanging projects.</p>
+                    <p>Drop me aline and I will get back to you.</p>
                 </div>
             </div>
         </div>
+        <div class="ui horizaontal divider"></div>
         <div class="ui container">
-            <span class="item">Copyright &copy; {{today|date:yyyy}} {{author}}</span>
+            <span>Copyright &copy; {{today|date:yyyy}} {{author}}</span>
+            |
+            <span>Powered by <a href="http://cryogenweb.org">Cryogen</a></span>
         </div>
     </footer>
 </div>
