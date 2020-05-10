@@ -13,12 +13,6 @@ body {
   font-size: 16px;
 }
 
-footer {
-  text-align: center;
-  padding-top: 75px;
-  padding-bottom: 30px;
-}
-
 .right {
   float: right;
   text-align: right;
@@ -104,6 +98,17 @@ pre, code, .hljs {
   }
 }
 
+/* Solution to have sticky footer https://github.com/Semantic-Org/Semantic-UI/issues/5955 */
+.Site.pusher {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site.content {
+  flex: 1;
+}
+
 /* Fomantic styles below */
 
 .hidden.menu {
@@ -160,15 +165,15 @@ pre, code, .hljs {
 }
 
 .footer.segment {
-  padding: 5em 0em;
+  min-height: 200px;
+  padding: 1em 0em;
 }
 
 .secondary.pointing.menu .toc.item {
   display: none;
 }
 
-.masthead.segment {
-  /* Remove border from masthead*/
+.no-bottom-border.segment {
   border-bottom: none !important;
 }
 
