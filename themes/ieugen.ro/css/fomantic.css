@@ -2,6 +2,110 @@
     https://fomantic-ui.com/examples/homepage.html
 */
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya';
+}
+
+body {
+  color: #333;
+  background-color: #f2f2f2;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+
+.right {
+  float: right;
+  text-align: right;
+}
+
+#content {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 0 0,0 6px 12px rgba(34,34,34,0.1);
+}
+
+#content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#post-tags {
+  margin-top: 30px;
+}
+
+#prev-next {
+  padding: 15px 0;
+}
+
+.post-header {
+  margin-bottom: 20px;
+}
+.post-header h2 {
+  font-size: 32px;
+}
+
+#post-meta {
+  font-size: 14px;
+  color: rgba(0,0,0,0.4)
+}
+
+#page-header {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+}
+#page-header h2 {
+  font-size: 32px;
+}
+
+pre {
+  overflow-x: auto;
+}
+pre code {
+  display: block;
+  padding: 0.5em;
+  overflow-wrap: normal;
+  white-space: pre;
+}
+
+code {
+  color: #428bca;
+}
+
+pre, code, .hljs {
+  background-color: #f7f9fd;
+}
+
+@media (min-width: 768px) {
+  .dropdown-menu>li>a {
+      padding: 3px 20px;
+  }
+  #content{
+      margin-top: 30px;
+      padding: 50px 75px;
+  }
+}
+
+@media (max-width: 767px) {
+  body{
+      font-size: 14px;
+  }
+  #content{
+      padding: 15px;
+  }
+  #post-meta .right {
+      float:left;
+      text-align: left;
+  }
+}
+
+/* Fomantic styles below */
+
 .hidden.menu {
   display: none;
 }
