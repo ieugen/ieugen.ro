@@ -23,23 +23,23 @@
 <body class="pushable">
 
     <!-- Following Menu -->
-    <div id="main-site-following-menu" class="ui hidden fixed top four item secondary pointing menu">
+    <div id="main-site-following-menu" class="ui hidden fixed top three item secondary pointing menu">
         <div class="ui container">
             <div class="item">
                 <img class="ui bottom aligned mini image" src="{{index-uri}}img/logos/ieugen-logo.png">
                 <span>{{title}}</span>
             </div>
             <a href="{{index-uri}}" class="item">Home</a>
-            <a href="#" class="item">About</a>
-            <a href="#" class="item">Subscribe</a>
+            <a href="{{index-uri}}cv/en" class="item">CV</a>
+            <!-- <a href="#" class="item">Subscribe</a> -->
         </div>
     </div>
 
     <!-- Sidebar Menu -->
     <div class="ui vertical sidebar menu">
         <a href="{{index-uri}}" class="item">Home</a>
-        <a href="#" class="item">About</a>
-        <a href="#" class="item">Subscribe</a>
+        <a href="{{index-uri}}cv/en" class="item">CV</a>
+        <!-- <a href="#" class="item">Subscribe</a> -->
     </div>
 
     <div class="pusher Site">
@@ -52,13 +52,13 @@
             </div>
 
             <div class="ui container">
-                <div class="ui top three item secondary pointing menu">
+                <div class="ui top two item secondary pointing menu">
                     <div class="toc item">
                         <i class="sidebar icon"></i>
                     </div>
                     <a href="{{index-uri}}" class="item">Home</a>
-                    <a href="#" class="item">About</a>
-                    <a href="#" class="item">Subscribe</a>
+                    <a href="{{index-uri}}cv/en" class="item">CV</a>
+                    <!-- <a href="#" class="item">Subscribe</a> -->
                 </div>
         </header>
         <main class="ui Site content vertical no-bottom-border segment">
@@ -66,7 +66,7 @@
             {% endblock %}
         </main>
         <footer class="ui Site inverted vertical footer segment">
-            <div class="ui container">
+            <!-- <div class="ui container">
                 <div class="ui stackable inverted divided equal height grid">
                     <div class="three wide column">
                         <h4 class="ui inverted header">Legal</h4>
@@ -98,8 +98,8 @@
                         <p>Drop me aline and I will get back to you.</p>
                     </div>
                 </div>
-            </div>
-            <div class="ui horizaontal divider"></div>
+            </div> -->
+            <!-- <div class="ui horizaontal divider"></div> -->
             <div class="ui center aligned text container">
                 <span>Copyright &copy; {{today|date:yyyy}} {{author}}</span>
                 |

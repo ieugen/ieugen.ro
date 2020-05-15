@@ -1,26 +1,10 @@
 {% extends "/html/base.html" %}
 {% block content %}
 
-<div class="ui container">
-    <div id="content">
-        {{page.content|safe}}
-    </div>
-
-    {% if disqus? %}
-    <div id="comments">
-        <a href="{{post.uri}}#disqus_thread">View Comments</a>
-    </div>
-    {% endif %}
-</div>
-
-<div id="post">
-    <div id="prev-next">
-        {% if post.prev %}
-        <a href="{{post.prev.uri}}">&laquo; {{post.prev.title}}</a>
-        {% endif %}
-        {% if post.next %}
-        <a class="right" href="{{post.next.uri}}">{{post.next.title}} &raquo;</a>
-        {% endif %}
+<div class="ui vertical under-construction center aligned segment">
+    <div class="ui text container">
+        <h1 class="ui header">Re-imagining ieugen.ro</h1>
+        <h2>Site under construction</h2>
     </div>
 </div>
 {% endblock %}

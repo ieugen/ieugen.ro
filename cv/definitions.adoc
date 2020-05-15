@@ -5,6 +5,7 @@
 :MySkypeID: stan.ieugen
 :MyTwitter: {uri-ieugen-twitter}[@{MyID}222]
 :MyLocation: Bucharest/România
+:MyGitHub: {uri-github-account}[my github account]
 
 // Courses
 

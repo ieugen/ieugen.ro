@@ -26,8 +26,7 @@ Download the link:cv.pdf[printable (PDF) version] ({published-cv}/cv.pdf). +
 You can also download the link:cv.txt[plain text (txt) version] ({published-cv}/cv.txt).
 
 This CV is written in {AsciiDoc} format.
-Its source code is available at <<cv,cv repository>> on {my-GitHub-account}.
-If you are looking for a version of this CV written in https://en.wikipedia.org/wiki/Microsoft_Word[Microsoft Word] format: [red]#Sorry, I rarely use it!#
+Its source code is available at <<cv,cv repository>> on {MyGitHub}.
 
 ====
 endif::[]

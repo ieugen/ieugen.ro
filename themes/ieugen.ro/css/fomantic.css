@@ -115,6 +115,18 @@ pre, code, .hljs {
   display: none;
 }
 
+.under-construction.segment {
+  min-height: 700px;
+  padding: 1em 0em;
+}
+
+.under-construction h1.ui.header {
+  margin-top: 3em;
+  /* margin-bottom: 4em; */
+  font-size: 4em;
+  font-weight: normal;
+}
+
 .masthead.segment {
   min-height: 160px;
   padding: 1em 0em;
@@ -165,7 +177,7 @@ pre, code, .hljs {
 }
 
 .footer.segment {
-  min-height: 200px;
+  min-height: 50px;
   padding: 1em 0em;
 }
 

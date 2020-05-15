@@ -2,7 +2,7 @@ Curriculum Vitae
 
 Eugen Stan
 eugen@ieugen.ro
-2020-05-15 06:51:09 +0300
+2020-05-15 07:36:25 +0300
 Table of Contents
 
   • Personal Details
@@ -15,16 +15,15 @@ Table of Contents
       □ Fire Fighter Officer at Inspectoratul pentru Situatii de Urgentă "Dealu Spirii" Bucuresti-Ilfov
       □ NetBeans Platform Translator at Joseki Bold
   • Conferences & presentations
-      □ Conferences, classes and trainings
   • Education
       □ Academic Background
       □ Language Skills
-      □ Hobby / other
+      □ Hobby and other
 
  Download the printable (PDF) version (https://ieugen.ro/cv/en/cv.pdf).
  You can also download the plain text (txt) version (https://ieugen.ro/cv/en/cv.txt).
 
- This CV is written in AsciiDoc format. Its source code is available at cv repository on {my-GitHub-account}. If you are looking for a version of this CV written in Microsoft Word format: Sorry, I rarely use it!
+ This CV is written in AsciiDoc format. Its source code is available at cv repository on my github account.
 
  Personal Details
 
@@ -219,7 +218,7 @@ ISU "Dealu Spirii" București-Ilfov
 
 My first long full-time job was as a Fire Fighter. My responsibility was to command a fire-fighting unit in training and rescue operations. I participated in about 100 rescue operations and missions with Detasamentul Special de Salvatori.
 
-I also got a small sponsorship in IT equipment. I wanted to do a digital migration and use electronic tools and documents.
+I also got a small sponsorship in IT equipment. I wanted to do a digital migration and use electronic documents and tools.
 
  NetBeans Platform Translator at Joseki Bold
 
@@ -230,11 +229,9 @@ This was my first paid contract. I translated the NetBeans Java Platform in Roma
 
  Conferences & presentations
 
- Conferences, classes and trainings
-
 I try to stay up to date and love going to open source conferences. I also founded Bucharest-JUG, helped manage it and hosted the sessions.
 
-  • I spoke at AdaptTo() 2018 with Dmitry Telegin about Modern authentication in Sling with OpenId Connect andhttp://www.keycloak.org/[Keycloak]
+  • I spoke at AdaptTo() 2018 with Dmitry Telegin about Modern authentication in Sling with OpenId Connect and Keycloak
 
   • I spoke about Continuous Delivery at I T.A.K.E. Unconference in Bucharest 2014
 
@@ -273,7 +270,7 @@ Fire Fighter Faculty
 
   • French: intermediate (reading, speaking, writing);
 
- Hobby / other
+ Hobby and other
 
 In ~2016 I decided that every year I will take a class to learn something new. The class/course should be about something I like or find interesting, in fields other than my work.
 
@@ -287,6 +284,6 @@ So far:
 
   • I’m a licensed massage therapist
 
-  • Took cooking classes in Bucharest and Hoi-An / Vietnam
+  • Took cooking classes in Bucharest and Hoi-An, Vietnam
 
-Last updated 2020-05-15 06:46:33 +0300
+Last updated 2020-05-15 07:31:33 +0300
