@@ -18,7 +18,7 @@
  :sass-src                     []
  :sass-path                    "sass"
  :theme                        "ieugen.ro"
- :resources                    ["img"]
+ :resources                    ["img", "cv"]
  :keep-files                   [".git"]
  :disqus?                      false
  :disqus-shortname             ""

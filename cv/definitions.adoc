@@ -186,8 +186,8 @@
 // Publications
 
 ifeval::["{lang}" == "en"]
-:published-cv: https://ieugen.github.io/cv/en
+:published-cv: https://ieugen.ro/cv/en
 endif::[]
 ifeval::["{lang}" == "ro"]
-:published-cv: https://ieugen.github.io/cv/ro
+:published-cv: https://ieugen.ro/cv/ro
 endif::[]

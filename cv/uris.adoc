@@ -13,7 +13,7 @@
 :uri-github-account: https://github.com/ieugen
 :uri-slides-code: {uri-ieugen-github}/whoami
 // Eugen Stan/GitHub Repositories
-:uri-gh-ieugen-cv: https://github.com/ieugen/cv
+:uri-gh-ieugen-cv: https://ieugen.ro/cv/en
 :uri-gh-ieugen-whoami: https://github.com/ieugen/whoami
 
 :uri-gh-cloudera-manager-api: https://github.com/axemblr/cloudera-manager-api

@@ -2,7 +2,7 @@ Curriculum Vitae
 
 Eugen Stan
 eugen@ieugen.ro
-2020-05-15 06:10:42 +0300
+2020-05-15 06:51:09 +0300
 Table of Contents
 
   • Personal Details
@@ -21,8 +21,8 @@ Table of Contents
       □ Language Skills
       □ Hobby / other
 
- Download the printable (PDF) version (https://ieugen.github.io/cv/en/cv.pdf).
- You can also download the plain text (txt) version (https://ieugen.github.io/cv/en/cv.txt).
+ Download the printable (PDF) version (https://ieugen.ro/cv/en/cv.pdf).
+ You can also download the plain text (txt) version (https://ieugen.ro/cv/en/cv.txt).
 
  This CV is written in AsciiDoc format. Its source code is available at cv repository on {my-GitHub-account}. If you are looking for a version of this CV written in Microsoft Word format: Sorry, I rarely use it!
 
@@ -289,4 +289,4 @@ So far:
 
   • Took cooking classes in Bucharest and Hoi-An / Vietnam
 
-Last updated 2020-05-14 17:56:44 +0300
+Last updated 2020-05-15 06:46:33 +0300
