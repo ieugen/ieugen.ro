@@ -62,12 +62,8 @@
                 </div>
         </header>
         <main class="ui Site content vertical no-bottom-border segment">
-            <div class="ui container">
-                <div id="content">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-            </div>
+            {% block content %}
+            {% endblock %}
         </main>
         <footer class="ui Site inverted vertical footer segment">
             <div class="ui container">
@@ -92,7 +88,8 @@
                     <div class="three wide column">
                         <h4 class="ui inverted header">Projects</h4>
                         <div class="ui inverted linked list">
-                            <a href="{{index-uri}}" class="item">Zețar</a>
+                            <a href="{{index-uri}}/pages/zetar" class="item">Zețar</a>
+                            <a href="{{index-uri}}/pages/lets-build-a-saas-app" class="item">Let's build a SaaS App</a>
                         </div>
                     </div>
                     <div class="seven wide column">

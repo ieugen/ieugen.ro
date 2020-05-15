@@ -1,14 +1,19 @@
 {% extends "/html/base.html" %}
 {% block content %}
-<p>This is home</p>
-<div id="post">
-    {% include "/html/post-content.html" %}
+
+<div class="ui container">
+    <div id="content">
+        {{page.content|safe}}
+    </div>
+
     {% if disqus? %}
     <div id="comments">
         <a href="{{post.uri}}#disqus_thread">View Comments</a>
     </div>
     {% endif %}
+</div>
 
+<div id="post">
     <div id="prev-next">
         {% if post.prev %}
         <a href="{{post.prev.uri}}">&laquo; {{post.prev.title}}</a>
