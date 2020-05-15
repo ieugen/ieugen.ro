@@ -1,0 +1,9 @@
+[[_2011-01-java-developer-at-josekibold]]
+= Java Developer at Joseki Bold
+
+icon:calendar[] `January 2011 to May 2011` +
+icon:group[] {JosekiBold}
+
+My first fully remote, full-time job as a software developer in {Java}.
+I worked on a Java network application based on (then JBoos) {Netty} library.
+I am grateful again to Emilian for helping me start my IT career.

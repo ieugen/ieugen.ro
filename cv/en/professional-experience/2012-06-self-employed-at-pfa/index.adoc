@@ -1,0 +1,70 @@
+[[_2012-06-self-employed-at-pfa]]
+= Self Employed at Stan Ioan Eugen PFA
+
+icon:calendar[] `June 2012 to May 2018` +
+icon:group[] {EugenStanPfa}
+
+This is my first micro company that I used to work on various projects.
+
+== Gr8pi SaaS - People assessment platform - part 1
+* icon:calendar[] July 2015 -> January 2018 at {DevLabel}, {GreatResearch}
+
+I worked on {Gr8pi}, a {SaaS} platform. I continued the work on this project via my other company ({Netdava}). Please see the details there.
+
+== Misc projects
+
+* icon:calendar[] June 2015 at {BrainConcert}: I delivered a 3 day training on {Java} fundamentals in Leicester, UK.
+
+* icon:calendar[] January 2015,  {Trusted}: I implemented the functionality for Trusted mark generation and distribution on client websites. I worked with {PHP}, {Wordpress}, {ApacheHTTP} and {AWS} S3.
+
+* icon:calendar[] December 2014 -> June 2015 at {Roomchecking}: I worked mostly with {JavaScript}. I established some UI reusable components and helped with {Azure} and {PostgreSQL}.
+
+* icon:calendar[] September 2014 at {Thales}: I delivered a training on {Java} modularity with {OSGi} and {Spring}.
+
+* icon:calendar[] September 2014 at {Axway}: I delivered a presentation on {ApacheCamel}.
+
+* icon:calendar[] July 2014 at {Comsolit}: I’ve helped involve Comsolit's customers in the project development by building a {ContinuousIntegration} pipeline with:
+** {Samba} 4 Active Domain Controller for unified {IdentityManagement}
+** {Jenkins} for continuous integration and test automation
+** {Gerrit} for code review
+** {ApacheSyncope} for web based identity management
+
+== Electronic invoice/order processing
+icon:calendar[] April 2013 -> April June 2014, {DocProcess}
+
+My second start-up experience. I was involved with designing and implementing a platform for electronic document processing.
+
+The platform did invoice and order mediation for super-markets in Romania and it’s suppliers.
+We went into production after six months, with a very small team.
+When I left the project, we mediated documents for three big super-market stores in Romania and over 200 of their suppliers.
+
+I was involved in the project with different roles and did the following activities: training on specific technologies and workflows, software design, architecture, Java implementation. I also handled {DevOps}.
+My operations tasks included: monitoring, deployment, level 3 support.
+
+Some of the choices I’ve made:
+
+* **Infrastructure**:
+** I’ve pushed for virtualization of existing servers using {XenServer} installations with
+centralized storage for easy back-up and recovery.
+** We’ve integrated a lot of services into {LDAP} for unified {IdentityManagement}.
+* **Development**:
+** I’ve trained the team to use version control ({git}) and {Maven} for dependency management.
+** We started using {Github} + Issues for issue tracking. Later moved to {Bitbucket} and {Jira}.
+** We used {git-flow} and pull requests for code review and {Jenkins} for automated {JUnit} tests.
+* **Standardization**: I’ve pushed for standardization across all stack
+** same operating system({Debian})
+** same JDK {OpenJDK} 7
+** same Database - {PostgreSQL} - to minimize operation overhead and improve development speed.
+* **Technology**: We used an open source technology stack. Gnu/Linux ({Debian} Stable) as base operating system with the {ApacheKaraf} application server using {ApacheCamel} for mediation and routing. We used {PostgreSQL} as a database. I integrated {ApacheFTP} and {Tomcat} WebDav with {ApacheShiro} for authentication and authorization and we used {Smooks} for data transformation.
+
+== On Demand {ApacheHadoop} processing on {AWS}
+icon:calendar[] June 2012 -> January 2013, at {Axemblr}
+
+This was my first "Start-up" experience. I joined {AndreiSavu} and we’ve worked on bringing {ApacheHadoop} on Cloud infrastructure ({AWS}, {ApacheCloudstack}) and other consulting projects.
+I engaged in company growth and product development. I represented the company and our product in front of the judges at Strata + Hadoop World 2012 {StrataConf2012}.
+
+I was involved with the following:
+
+* Axemblr Provisionr - worked on application architecture and design (based on {ApacheKaraf}), implemented {ApacheCloudStack} provider. The project was moved to {ApacheFoundation} Incubator and the company was aquired by {Cloudera}.
+* I wrote a {Java} client for {AxemblrClouderaManagerApi} REST API
+* I wrote a {JavaScript} client for the REST interface of {ApacheBrooklyn}

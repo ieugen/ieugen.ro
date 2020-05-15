@@ -1,0 +1,58 @@
+[[_2016-02-administrator-at-netdava]]
+= Self Employed at Netdava
+
+icon:calendar[] `February 2016 to Now (Ongoing)` +
+icon:group[] {Netdava}
+
+This is my second company. I use this company to work on various projects.
+
+== API integration {Manychat} and {Mobilpay}
+icon:calendar[] May 2020, {Robomarketing}
+
+The client wanted to enable card payment via {Messenger} marketing robots. I've used {PHP} with {Laravel} and {Docker} to build an {API} integration on top of the clients existing {Wordpress} hosting solution.
+
+== Gr8pi SaaS - People assessment platform
+icon:calendar[] January 2018 (from July 2015) -> May 2020, {GreatPeopleInside}
+
+My third start-up experience. I had many hats: developer, team manager, solution architect, managed operations, investor.
+
+**Context**
+
+The {GreatPeopleInside} company sells assessments used in {HR} processes. I've helped to build the {gr8pi} platform, a {SaaS} internet platform that delivers the assessments internationally. When I left we had clients on all major continents and delivered more than 500.000 questionnaires in more than 20 languages.
+
+I started as a developer and bootstrapped the project by writing the first lines of ({Java}) code. As the team formed, I took on team management responsibilities. When we went live, I also took on a {DevOps} hat. I was in contact with the client and provided technical solutions and designed the project architecture. I worked with a remote team from Vietnam and had to overcome language and timezone challenges.
+
+It was interesting, it was fun, it was stressful. I've done a lot, I've learned a lot and I have grown a lot from this experience.
+
+**Infrastructure**
+
+We deployed on {Hetzner} and {Aws}. I pushed for {Docker} adoption and then {Kubernetes}. I automated infrastructure deployment via {terraform}, {ansible} and {kubespray}.
+I pushed for centralized {IdentityManagement} to reduce operational overhead. We started with {LDAP} and then we implemented web {SSO} via {Azure} AD and {Keycloak}.
+
+To deliver the products to all the 20+ languages, the company needed an affordable translation solution. I deployed {Weblate} and then integrated with {Office365} via {Azure} AD for easy management.
+
+We had separate {Kubernetes} clusters and environments for production and staging/development.
+I've implemented {SSO} with {OpenIdConnect} for development infrastructure: {Jenkins}, {Nexus}, {Kubernetes}, etc.
+
+I implemented a tool using {Clojure} to automate translation updates from {Weblate} for our production systems.
+
+**Development**
+
+{Gr8pi} was deployed using a micro-service architecture.
+We held daily {Scrum} meetings and worked in development sprints.
+We used {Bitbucket} for code hosting and {Jira} for issue tracking.
+
+We used {Gradle} as a build system. We packaged applications as {Docker} images and pushed them to {Nexus}. For staging environment I implemented automated deployment on every {Jenkins} build.
+
+[cols="3*",options="header"]
+|===
+
+| Technologies
+| Tools
+| OS/Runtimes
+
+| {Java}, {Clojure}, {JavaScript}, {SQL}, {React}, {SpringBoot}, {PostgreSQL}, {Keycloak}
+| {Bash}, {Vim}, {Intellij}, {Gradle}, {Jenkins}, {Flyway}, {terraform}, {ansible}, {helm}, {Dbeaver}
+| {Debian}, {Docker}, {Kubernetes}, {OpenJdk} 8, {GraalVM}, {NodeJs}
+
+|===

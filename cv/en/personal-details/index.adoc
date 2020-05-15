@@ -1,0 +1,34 @@
+[[personal-details]]
+= icon:user[] Personal Details
+
+.Eugen Stan
+****
+
+I'm passionate about technology and the benefits it can bring. I believe technology should serve people and I do my best to achieve that goal. I like building systems and I find myself experimenting.
+Two personality traits that describe me are curiosity and tenacity.
+
+My first coding experience was in ~6th grade with a {HC85} PC running {Basic}. In high school we learned {Pascal} and I self-thought myself {CLanguage} and {Linux}.
+I used to sneak in the computer lab often. I convinced them to let me install {Slackware}.
+I read {LetsBuildACompiler} and then I wrote an interpreter for a simple language, unimaginatively called {InterpretorPseudoCod}.
+I took a break from coding during most of my college years.
+
+When I started coding professionally I used mainly {Java} and {JavaScript}.
+
+Today my language of choice is {Clojure} and {ClojureScript}. It's a fun language to use.
+
+I like libre/open source software and I was/am involved/support/promote {ApacheFoundation} and {Debian} communities. I founded {Bucharest-JUG} together with {AndreiSavu} and {MihaiSoloi}, which I managed alone for a while.
+
+****
+
+Contacts::
+* icon:phone[] Mobile Phone/WhatsApp: {MyPhone}
+* icon:skype[] Skype: {MySkypeID}
+WebSites::
+* ieugen [https://ieugen.ro[https://ieugen.ro] (__[red]#Rebooting - migrating to CryogenWeb, a {Clojure} static web generator#)__]
+* blog.ieugen.ro [https://blog.ieugen.ro/[https://blog.ieugen.ro/]  (__[red]#planned migration to ieugen.ro/blog#__)]
+// * {uri-netdava}[netdava.com] __([red]#company website#)__
+
+Social Media::
+* icon:linkedin[] Linkedin: {uri-ieugen-linkedin} | icon:github[] GitHub: {uri-ieugen-github} | icon:twitter[] Twitter: {uri-ieugen-twitter} | icon:facebook[] Facebook: {uri-ieugen-facebook} | icon:instagram[] Instagram: {uri-ieugen-instagram}
+icon:map-marker[] Location::
+* {uri-ieugen-location}[{MyLocation}]

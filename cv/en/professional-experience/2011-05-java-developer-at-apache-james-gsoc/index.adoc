@@ -1,0 +1,13 @@
+[[_2011-05-java-developer-at-apache-james-gsoc]]
+= Java Developer at Apache James (Google Summer of Code)
+
+icon:calendar[] `May 2011 to September 2011` +
+icon:group[] {ApacheFoundation}
+
+I applied and was selected to participate in the {Gsoc2011} program.
+{ApacheJames} is an enterprise email server written in Java. It is a component based, high performance enterprise email server.
+During the program I implemented an mailbox storage solution on top of {HBase}.
+I also contributed a fast iterator-like interface over email messages stored in an mbox file. This contribution is part of {ApacheJamesMime4j}.
+
+After the project I was proposed and accepted to become an {ApacheCommitter} and later, a member of the project management committee.
+

@@ -1,0 +1,30 @@
+
+
+// Other Projects, Activities and Open Source involvement
+// Smooks committer I contributed and I am a committer for Smooks. I was using Smooks in pro-
+// duction and fixed some OSGi deployment issues. I also refactored the project setup, upgraded
+// some dependencies, polished things a bit and pushed for Travis Continuos Integration.
+// Apache James Committer and PMC Member Apache James is an enterprise email server
+// written in Java, developed by the Apache Software Foundation. My main contributions are:
+// • HBase mailbox implementation
+// • mbox iterator (mime4j) - fast NIO based iterator-like interface over messages in an mbox
+// file
+// • Release manager for some sub-projects
+// • Email support on mailing-list
+// • OSGi improvements
+// Note: I don’t use the project in producion so my involvement with the project has diminished.
+// Other open source involvement I usually try to fix things and push improvements upstream.
+// Some other Open Source projects I’ve contributed with bug reports and other improvements:
+// HBase, CXF, Camel, Syncope (Debian packages).
+// Bucharest Java User Group and other community activity I’m one of the founders of Bu-
+// charest Java User Group - BJUG - bjug.ro. We organize monthly meetings where we do
+// networking and discuss about Java/JVM technologies. I am a Debian user and sporadic con-
+// tribuitor to the project since 2007, involved mostly with localization and some involvement
+// with the Java Packaging Team.
+// Ocasionally I get involved in some of the local LUG community activities organized by ProLi-
+// nux Association (http://prolinux.ro/), RLUG (www.lug.ro), The Free Software Group (http://softwareliber.ro/Older stuff: Automation Monitoring and Control System Designed and implemented as my
+// univeristy thesis. It’s a client-server application that allows the user to view and control auto-
+// mation systems. The server is developed in C++ and uses COM technology to acces the
+// automation BUS.
+// The client is a java applet that displays a visualisation of the environment.
+// It was tested using a KNX installation.

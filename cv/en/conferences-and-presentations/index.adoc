@@ -1,0 +1,19 @@
+[[conferences-and-presentations]]
+= icon:comments[] Conferences & presentations
+
+== Conferences, classes and trainings
+
+I try to stay up to date and love going to open source conferences.
+I also founded {Bucharest-JUG}, helped manage it and hosted the sessions.
+
+* I spoke at {AdaptTo2018} with {DmitryTelegin} about Modern authentication in Sling with {OpenIdConnect} and{Keycloak}
+* I spoke about Continuous Delivery at {ITAKE2014} in Bucharest 2014
+* I participated at {Java2Days} Bulgaria in 2013
+* Participated at {ApacheCon2012} in Sinsheim, Germany
+* I spoke at {BerlinBuzzwords} about {ApacheJames} in 2012
+* Participated at {ApacheCon2011} in Vancouver, Canada
+* {ApacheMahout} Training - held by Grant Ingersoll, Vancouver, Canada, during ApacheCon 2011
+* Scrum training - on the job training 1and1 Internet Romania, 2011
+* Machine Learning online class by Andrew Ng, Stanford University, oct. 2011 - dec. 2011
+* Artificial Intelligence online class by Sebastian Thurn and Peter Norvig Stanford University, oct. 2011 - dec 2011
+* Introduction to Databases online class by Jennifer Whidom Stanford University, oct. 2011 - dec 2011

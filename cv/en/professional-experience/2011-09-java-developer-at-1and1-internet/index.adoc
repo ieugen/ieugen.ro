@@ -1,0 +1,8 @@
+[[_2011-09-java-developer-at-1and1-internet]]
+= Java Developer at 1and1 Internet România
+
+icon:calendar[] `September 2011 to May 2012` +
+icon:group[] {1and1Romania}
+
+I worked inside the {BigData} Solutions team on an email clustering application using {ApacheHadoop}, {HBase} and {ApacheMahout}.
+

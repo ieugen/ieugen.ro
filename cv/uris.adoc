@@ -1,0 +1,258 @@
+
+:uri-ieugen: https://ieugen.ro
+:uri-ieugen-blog-old: https://blog.ieugen.ro/
+:uri-ieugen-location: https://goo.gl/maps/fwPsGQQrkH6CFeYi9
+
+:uri-ieugen-twitter: https://twitter.com/ieugen222
+:uri-ieugen-github: https://github.com/ieugen
+:uri-ieugen-linkedin: https://www.linkedin.com/in/ieugen
+:uri-ieugen-facebook: https://www.facebook.com/ieugen222
+:uri-ieugen-instagram: https://www.instagram.com/ieugen222
+
+// Eugen Stan/Personal Presentation
+:uri-github-account: https://github.com/ieugen
+:uri-slides-code: {uri-ieugen-github}/whoami
+// Eugen Stan/GitHub Repositories
+:uri-gh-ieugen-cv: https://github.com/ieugen/cv
+:uri-gh-ieugen-whoami: https://github.com/ieugen/whoami
+
+:uri-gh-cloudera-manager-api: https://github.com/axemblr/cloudera-manager-api
+:uri-gh-ipc: https://github.com/ieugen/ipc
+:uri-lets-build-a-compiler: https://compilers.iecc.com/crenshaw/
+
+// Eugen Stan/Online docs
+
+// Eugen Stan/Youtube videos
+
+// Eugen Stan/Photos/Family
+
+// Eugen Stan/Photos/Teaching
+
+// Eugen Stan/Photos/Triathlon
+
+// Eugen Stan/Photos/Training
+
+// Eugen Stan/Photos/Traveling
+
+// Eugen Stan/Photos/Colleagues
+
+// Eugen Stan/Colleagues
+
+:uri-andrei-savu: https://www.linkedin.com/in/sandrei
+:uri-mihai-soloi: https://www.linkedin.com/in/mihaisoloi/
+:uri-dmitry-telegin: https://www.linkedin.com/in/d-telegin/
+
+// Operational Systems
+:uri-centos: https://www.centos.org/
+:uri-fedora: https://getfedora.org/
+:uri-debian: http://www.debian.org/
+:uri-ubuntu: https://www.ubuntu.com/
+
+// Programming Languages
+:uri-bash: https://www.gnu.org/software/bash/
+:uri-openjdk: https://openjdk.java.net/
+:uri-graalvm: https://www.graalvm.org/
+:uri-java-se: http://www.oracle.com/technetwork/java/javase/overview/index.html
+:uri-java: {uri-java-se}
+:uri-clojure: https://clojure.org/
+:uri-clojure-script: https://clojurescript.org/
+:uri-javascript: https://en.wikipedia.org/wiki/JavaScript
+:uri-nodejs: https://nodejs.org
+:uri-markdown: https://guides.github.com/features/mastering-markdown/
+:uri-asciidoc: http://asciidoctor.org/docs/what-is-asciidoc/
+:uri-php: http://php.net/
+:uri-wordpress: https://wordpress.com/
+:uri-laravel: https://laravel.com/
+:uri-pascal: https://en.wikipedia.org/wiki/Pascal_(programming_language)
+:uri-basic-language: https://en.wikipedia.org/wiki/BASIC
+:uri-hc85: https://ro.wikipedia.org/wiki/HC
+:uri-groovy: http://groovy-lang.org/
+
+:uri-linux: https://www.kernel.org/
+:uri-slackware: http://www.slackware.com/
+:uri-clanguage: https://en.wikipedia.org/wiki/C_(programming_language)
+
+// Java Frameworks
+:uri-java-ee: http://www.oracle.com/technetwork/java/javaee/overview/index.html
+:uri-spring: https://spring.io/
+:uri-spring-boot: https://spring.io/projects/spring-boot
+:uri-flyway: https://flywaydb.org/
+:uri-netty: https://netty.io/
+:uri-osgi: https://www.osgi.org/
+
+:uri-cryogenweb: https://cryogenweb.org/
+
+:uri-junit: http://junit.org
+:uri-apache-hbase: https://hbase.apache.org/
+:uri-apache-mahout: https://mahout.apache.org
+
+// JavaScript Frameworks
+:uri-react: https://reactjs.org/
+
+// Tools/Version Control
+:uri-git: https://git-scm.org
+:uri-git-flow: https://nvie.com/posts/a-successful-git-branching-model/
+// Tools/Editors
+:uri-vim: https://vim.sourceforge.io/
+// Tools/Writing
+:uri-asciidoctor: http://asciidoctor.org
+// Tools/Virtualization
+:uri-virtualbox: https://www.virtualbox.org/
+:uri-kvm: https://www.linux-kvm.org
+:uri-xenserver: https://xenserver.org/
+:uri-vagrant: https://www.vagrantup.com/
+:uri-docker: https://www.docker.com/
+
+// Tools/Java/Project Management
+:uri-maven: https://maven.apache.org/
+:uri-gradle: https://gradle.org/
+// Tools/Java/IDE
+:uri-netbeans: https://netbeans.org
+:uri-eclipse: http://www.eclipse.org/
+:uri-intellij: https://www.jetbrains.com/idea/
+:uri-vscode: https://code.visualstudio.com/
+// Tools/Java/IDE/plugins
+:uri-jboss-tools: https://tools.jboss.org/
+// Tools/Continuous Integration
+:uri-jenkins: https://jenkins.io/
+// Tools/Repository Management
+:uri-nexus: http://www.sonatype.org/nexus/
+// Tools/Static site generators
+:uri-awestruct: http://awestruct.org/
+// Tools/Shell
+:uri-tmux: https://github.com/tmux/tmux/wiki
+
+:uri-gerrit: https://www.gerritcodereview.com/
+:uri-bitbucket: https://bitbucket.org/
+:uri-jira: https://www.atlassian.com/software/jira
+
+:uri-graphql: https://graphql.org/
+
+:uri-scrum: https://www.scrum.org/resources/what-is-scrum
+// Identity management
+:uri-ldap: https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol
+:uri-samba: https://www.samba.org/
+:uri-identity-management: https://en.wikipedia.org/wiki/Identity_management
+:uri-sso: https://en.wikipedia.org/wiki/Single_sign-on
+:uri-apache-syncope: https://syncope.apache.org/
+:uri-alm: https://en.wikipedia.org/wiki/Application_lifecycle_management
+:uri-devops: https://en.wikipedia.org/wiki/DevOps
+
+// Middleware/Red Hat
+:uri-keycloak: http://www.keycloak.org/
+:uri-oauth2: https://oauth.net/2/
+:uri-openid-connect: https://openid.net/connect/
+// Middleware/Apache
+:uri-apache-tomcat: https://tomcat.apache.org/
+:uri-apache-http: https://httpd.apache.org/
+// Middleware/Other
+:uri-nginx: https://nginx.org/
+:uri-tomcat: http://tomcat.apache.org/
+
+//  Cloud/Other
+:uri-aws: https://aws.amazon.com/
+:uri-apache-cloudstack: https://cloudstack.apache.org/
+:uri-azure: https://azure.microsoft.com/
+:uri-hetzner: https://www.hetzner.com/
+:uri-office365: https://www.office.com/
+:uri-weblate: https://weblate.org/en/
+
+// Databases/Other
+:uri-postgresql: https://www.postgresql.org/
+:uri-dbeaver: https://dbeaver.io/
+:uri-sql: https://en.wikipedia.org/wiki/SQL
+:uri-datalog: https://en.wikipedia.org/wiki/Datalog
+
+// Companies
+:uri-isu-dealu-spirii: https://isubif.ro/
+:uri-josekibold: http://www.emilianbold.ro/
+:uri-eugen-stan-pfa: https://ieugen.ro/
+:uri-netdava: https://netdava.com/
+:uri-1and1-romania: https://jobs.1und1.de/ro/
+:uri-axemblr: http://www.axemblr.com/
+:uri-docprocess: https://doc-process.com/ro/
+:uri-comsolit: https://www.comsolit.com/
+:uri-axway: https://www.axway.com/en
+:uri-thales: https://www.thalesgroup.com/en/countries/europe/romania
+:uri-roomchecking: https://www.roomchecking.com/
+:uri-trusted: https://trusted.ro/
+:uri-brainconcert: https://www.brainconcert.com/
+:uri-devlabel: https://www.startus.cc/company/devlabel
+:uri-greatresearch: https://greatresearch.ro/
+:uri-greatpeopleinside: https://greatpeopleinside.com/
+:uri-robomarketing: https://www.robomarketing.ro/
+
+:uri-mobilpay: https://netopia-payments.com
+:uri-manychat: https://manychat.com/
+:uri-facebook: https://facebook.com/
+:uri-facebook-messenger: https://messenger.com/
+
+
+:uri-apache-foundation: https://www.apache.org/
+:uri-apache-committer: https://people.apache.org/committer-index.html#ieugen
+:uri-gsoc-james-hbase: https://www.google-melange.com/archive/gsoc/2011/orgs/asf/projects/ieugen.html
+:uri-gsoc: https://summerofcode.withgoogle.com/
+:uri-apache-james: https://james.apache.org/
+:uri-apache-mime4j: https://james.apache.org/mime4j/
+:uri-apache-hadoop: https://hadoop.apache.org/
+:uri-apache-karaf: https://karaf.apache.org/
+:uri-apache-camel: https://camel.apache.org/
+:uri-apache-ftp-server: https://mina.apache.org/ftpserver-project/
+:uri-apache-shiro: https://shiro.apache.org/
+:uri-apache-brooklyn: https://brooklyn.apache.org/
+
+:uri-smooks: https://www.smooks.org/
+
+:uri-cloudera: https://www.cloudera.com/
+:uri-oracle: https://oracle.com
+:uri-redhat: https://redhat.com
+:uri-ibm: https://www.ibm.com
+
+:uri-gr8pi: https://www.gr8pi.com
+
+:uri-hledger: https://hledger.org/
+:uri-plaintext-accounting: https://plaintextaccounting.org/
+
+// Definitions
+:uri-hr: https://en.wikipedia.org/wiki/Human_resources
+:uri-big-data: https://en.wikipedia.org/wiki/Big_data
+:uri-rest: https://en.wikipedia.org/wiki/Representational_state_transfer
+:uri-api: https://en.wikipedia.org/wiki/Application_programming_interface
+:uri-uat: https://en.wikipedia.org/wiki/Acceptance_testing
+:uri-rsync: https://pt.wikipedia.org/wiki/Rsync
+:uri-poc: https://en.wikipedia.org/wiki/Proof_of_concept
+:uri-saas: https://en.wikipedia.org/wiki/Software_as_a_service
+:uri-continuosu-integration: https://en.wikipedia.org/wiki/Continuous_integration
+:uri-oss: https://en.wikipedia.org/wiki/Open-source_software
+
+// Places
+
+// Universities
+:uri-facultatea-pompieri: http://www.academiadepolitie.ro/facpmp/
+:uri-sailor: https://en.wikipedia.org/wiki/List_of_certificates_for_operators_of_pleasure_craft
+
+// Groups
+:uri-bucharest-jug: https://bucharest-jug.github.io/
+
+// Certifications
+
+// Events
+:uri-strata-conf-2012: http://www.hadoopsphere.com/2012/10/startup-showcase-finalists-at-strata.html
+:uri-apache-con-2011: http://na11.apachecon.com/
+:uri-apache-con-2012: http://eu12.apachecon.com/
+:uri-java2days: https://java2days.com/
+:uri-itake-2014: http://2014.itakeunconf.com/ioan-eugen-stan-hands-on-continuous-delivery/
+:uri-berlin-buzzwords: https://2012.berlinbuzzwords.de/content/ioan-eugen-stan
+:uri-adaptto-2018: https://adapt.to/2018/en/schedule/modern-authentication-in-sling-with-openid-connect-and-keycloak.html
+
+// https://www.youtube.com/watch?v=eaikc141TTc
+
+// https://www.youtube.com/watch?v=aaqpmmyylis
+
+// Other
+:uri-swarm: https://docs.docker.com/engine/swarm/
+:uri-kubernetes: https://kubernetes.io/
+:uri-helm: https://helm.sh/
+:uri-kubespray: https://kubespray.io/#/
+:uri-terraform: https://www.terraform.io/
+:uri-ansible: https://www.ansible.com/

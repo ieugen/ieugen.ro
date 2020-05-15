@@ -1,0 +1,58 @@
+= Curriculum Vitae
+Eugen Stan <eugen@ieugen.ro>
+{localdatetime}
+:toc2:
+:toclevels: 2
+:icons: font
+:iconfont-cdn: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+:linkattrs:
+:sectanchors:
+:sectlink:
+:experimental:
+:source-language: asciidoc
+:includedir: _includes
+:attribute-missing: warn
+//:case-sensitive-attrs:
+
+include::../uris.adoc[]
+include::../definitions.adoc[]
+
+:leveloffset: +1
+
+ifdef::backend-html5[]
+[NOTE]
+====
+Download the link:cv.pdf[printable (PDF) version] ({published-cv}/cv.pdf). +
+You can also download the link:cv.txt[plain text (txt) version] ({published-cv}/cv.txt).
+
+This CV is written in {AsciiDoc} format.
+Its source code is available at <<cv,cv repository>> on {my-GitHub-account}.
+If you are looking for a version of this CV written in https://en.wikipedia.org/wiki/Microsoft_Word[Microsoft Word] format: [red]#Sorry, I rarely use it!#
+
+====
+endif::[]
+
+include::personal-details/index.adoc[]
+
+//<<<
+include::professional-experience/index.adoc[]
+
+//<<<
+include::technical-writing/index.adoc[]
+
+//<<<
+include::conferences-and-presentations/index.adoc[]
+
+//<<<
+include::education/index.adoc[]
+
+//<<<
+include::technical-skills/index.adoc[]
+
+//<<<
+include::certifications/index.adoc[]
+
+//<<<
+include::github-repositories/index.adoc[]
+
+:leveloffset: -1

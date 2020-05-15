@@ -1,0 +1,9 @@
+[[_2009-08-netbeans-translator-at-josekibold]]
+= NetBeans Platform Translator at Joseki Bold
+
+icon:calendar[] `August 2009 to September 2009` +
+icon:group[] {JosekiBold}
+
+This was my first paid contract. I translated the {NetBeans} Java Platform in Romanian language.
+I am grateful to Emilian for giving me this opportunity. I used the money from this and some savings to buy my first laptop.
+Of course, I installed {Debian} on it.
