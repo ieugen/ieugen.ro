@@ -1,38 +1,49 @@
 = Să facem ieugen.ro great again
 
-- [done] de acomodat la structura cryogen
-- [done] configurat asciidoc
-- [done] de configurat klipse clojurescript
-- [done] ieugen.ro - logo
-- [done] live reload
-- [in progress] să mă familiarizez cu Fomantic UI / Semnatic UI
-- [in progress] tema pe bază de semantic ui
-    - [done] base.html
-    - [done] sticky footer: https://css-tricks.com/couple-takes-sticky-footer/ , https://github.com/Semantic-Org/Semantic-UI/issues/5955
-    - home.html, page.html , post.html
-- site curat de bază, fără customizări, cu conținutul vechi local
-- de stabilit secțiunile din site:
-    - despre
-    - proiecte
-    - contact
-        - obfuscare date de contact
-    - politica de confidențialitate - cu serviciile folosite
-- documentație cum să publici situl
-- publicare online
+* [done] de acomodat la structura cryogen
+* [done] configurat asciidoc
+* [done] de configurat klipse clojurescript
+* [done] ieugen.ro - logo
+* [done] live reload
+* [in progress] să mă familiarizez cu Fomantic UI / Semnatic UI
+* [in progress] tema pe bază de semantic ui
+** [done] base.html
+** [done] sticky footer: https://css-tricks.com/couple-takes-sticky-footer/ , https://github.com/Semantic-Org/Semantic-UI/issues/5955
+** home.html, page.html , post.html
+* site curat de bază, fără customizări, cu conținutul vechi local
+* de stabilit secțiunile din site:
+** despre
+** proiecte
+** contact
+*** obfuscare date de contact
+** politica de confidențialitate - cu serviciile folosite
+* documentație cum să publici situl
+* publicare online
 
 
-- Versiune mobilă
+* Versiune mobilă
 
 == Creștere
 
-- Înregistrare cu platform de conținut / agregatoare
-    - care sunt ??
+* Înregistrare cu platform de conținut / agregatoare
+** care sunt ??
 
-== Drăguțele
+== Ovbiective
 
-- ramdisk
-- de stabilit și integrat canale sociale
-    - twitter
-    - linkedin
-    - githib
-    - youtube
+De stabilit și integrat canale sociale:
+
+* Twitter
+** Să apară link către contul de twitter: https://twitter.com/ieugen222
+** Opționl: să apară lista cu ultimele tweeturi ?!
+* Youtube
+** Să fie link către youtube: https://www.youtube.com/channel/UC4ZJGV5gYb_8LhNfwIBYiNw?view_as=subscriber
+** Opțional: Cum facem ca playlisturile din Youtube să fie disponibile pe site ?!
+* Linkedin
+** Să apară adresă către linkedin: https://www.linkedin.com/in/ieugen222/
+* Github
+** Să apară adresă: github.com/ieugen/
+
+=== Alte îmbunătățiri
+
+* Logo actualizat
+* poza clasică pe munte image::img/ieugen.image.jpg

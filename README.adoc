@@ -8,3 +8,14 @@
 * https://openjdk.java.net/[Java] platformă pentru Cryogen-Web ( Closure / Leiningen )
 
 
+=== Cum să construiești websitul
+
+Situl folosește cryogenweb.
+Citește documentația de acolo cel puțin o dată.
+
+[source,shell]
+--
+    # Construiește situl și pornește un server web local
+    lein run
+    cd site-build && python3 -m http.server
+--
