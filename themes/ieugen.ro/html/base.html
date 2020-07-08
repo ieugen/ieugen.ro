@@ -18,6 +18,7 @@
     {% endif %}
 
     {% style "css/fomantic.css" %}
+    <link rel="stylesheet" type="text/css" href="../css/custom-style.css">
 </head>
 
 <body class="pushable">
@@ -68,7 +69,7 @@
             {% endblock %}
         </main>
         <footer class="ui Site inverted vertical footer segment">
-            <!-- <div class="ui container">
+            <div class="ui container">
                 <div class="ui stackable inverted divided equal height grid">
                     <div class="three wide column">
                         <h4 class="ui inverted header">Legal</h4>
@@ -95,13 +96,20 @@
                         </div>
                     </div>
                     <div class="seven wide column">
-                        <h4 class="ui inverted header">Need my help?</h4>
+                        <h4 class="ui inverted header">Need my help? Contact me:</h4>
+                        <p>
+                            <a href="https://www.linkedin.com/in/ieugen"><i class="large linkedin icon"></i></a>
+                            <a href="https://github.com/ieugen"><i class="large github icon"></i></a>
+                            <a href="https://twitter.com/ieugen222"><i class="large twitter icon"></i></a>
+                            <a href="https://www.facebook.com/ieugen222"><i class="large facebook icon"></i></a>
+                            <a href="https://www.instagram.com/ieugen222"><i class="large instagram icon"></i></a>
+                        </p>
                         <p>I am looking for challanging projects.</p>
                         <p>Drop me aline and I will get back to you.</p>
                     </div>
                 </div>
-            </div> -->
-            <!-- <div class="ui horizaontal divider"></div> -->
+            </div>
+            <div class="ui horizaontal divider"></div>
             <div class="ui center aligned text container">
                 <span>Copyright &copy; {{today|date:yyyy}} {{author}}</span>
                 |
@@ -110,7 +118,6 @@
                 <span>Hosting by <a href="https://www.netlify.com/">Netlify</a></span>
             </div>
         </footer>
-
     </div>
 
     <!-- You MUST include jQuery before Fomantic -->

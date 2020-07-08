@@ -7,16 +7,17 @@
         <h2>Recent Posts</h2>
         {% with p=latest-posts|first %}
             {% if p.title %}
-                <h3>{{p.title}}</h3>
+                <h3><a href="{{p.uri}}">{{p.title}}</a></h3>
             {% endif %}
             {% if p.description %}
-                <p>{{p.description}}</p>
+                <p class="excerpt">{{p.description}}</p>
             {% else %}
                 <p>No description found</p>
             {% endif %}
         <h1>{{p.content}}</h1>
         {% endwith %}
-        <ul>
+        <div class="ui divider"></div>
+        <ul class="posts-list">
             {% for post in latest-posts %}
             <li>
                 <div class="post-wrapper">
@@ -27,15 +28,5 @@
         </ul>
     </div>
     {% endif %}
-    <!-- {% if tags|not-empty %}
-                <div id="tags">
-                    <h3>Tags</h3>
-                    <ul>
-                        {% for tag in tags %}
-                        <li><a href="{{tag.uri}}">{{tag.name}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                {% endif %} -->
 </div>
 {% endblock %}
