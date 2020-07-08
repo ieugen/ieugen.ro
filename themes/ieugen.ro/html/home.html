@@ -1,10 +1,41 @@
 {% extends "/html/base.html" %}
 {% block content %}
 
-<div class="ui vertical under-construction center aligned segment">
-    <div class="ui text container">
-        <h1 class="ui header">Re-imagining ieugen.ro</h1>
-        <h2>Site under construction</h2>
+<div class="ui container">
+    {% if latest-posts|not-empty %}
+    <div id="recent">
+        <h2>Recent Posts</h2>
+        {% with p=latest-posts|first %}
+            {% if p.title %}
+                <h3>{{p.title}}</h3>
+            {% endif %}
+            {% if p.description %}
+                <p>{{p.description}}</p>
+            {% else %}
+                <p>No description found</p>
+            {% endif %}
+        <h1>{{p.content}}</h1>
+        {% endwith %}
+        <ul>
+            {% for post in latest-posts %}
+            <li>
+                <div class="post-wrapper">
+                    <a href="{{post.uri}}">{{post.title}}</a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
+    {% endif %}
+    <!-- {% if tags|not-empty %}
+                <div id="tags">
+                    <h3>Tags</h3>
+                    <ul>
+                        {% for tag in tags %}
+                        <li><a href="{{tag.uri}}">{{tag.name}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %} -->
 </div>
 {% endblock %}
