@@ -9,6 +9,7 @@
     <meta name="keywords" content="">
     {% endblock %}
     <link rel="canonical" href="{{site-url}}{{uri}}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
@@ -19,6 +20,7 @@
 
     {% style "css/fomantic.css" %}
     <link rel="stylesheet" type="text/css" href="../css/custom-style.css">
+
 </head>
 
 <body class="pushable">
@@ -28,10 +30,14 @@
         <div class="ui container">
             <div class="item">
                 <img class="ui bottom aligned mini image" src="{{index-uri}}img/logos/ieugen-logo.svg">
-                <span>{{title}}</span>
+                <code>{{title}}</code>
             </div>
-            <a href="{{index-uri}}" class="item">Home</a>
-            <a href="{{index-uri}}cv/en" class="item">CV</a>
+            <div class="item">
+                <a href="{{index-uri}}" class="item">Home</a>
+                <a href="{{index-uri}}pages/about" class="item">About</a>
+                <a href="{{index-uri}}pages/projects" class="item">Projects</a>
+                <a href="{{index-uri}}cv/en" class="item">CV</a>
+            </div>
             <!-- <a href="#" class="item">Subscribe</a> -->
         </div>
     </div>
@@ -39,6 +45,8 @@
     <!-- Sidebar Menu -->
     <div class="ui vertical sidebar menu">
         <a href="{{index-uri}}" class="item">Home</a>
+        <a href="{{index-uri}}pages/about" class="item">About</a>
+        <a href="{{index-uri}}pages/projects" class="item">Projects</a>
         <a href="{{index-uri}}cv/en" class="item">CV</a>
         <!-- <a href="#" class="item">Subscribe</a> -->
     </div>
@@ -48,7 +56,8 @@
             <div class="ui text container">
                 <h1 class="header">
                     <img class="ui middle aligned tiny image logo" src="{{index-uri}}img/logos/ieugen-logo.svg">
-                    <a href="{{index-uri}}"> {{title}}</a>
+                    <a href="{{index-uri}}" class="header-title">
+                        <code>{{title}}</code></a>
                 </h1>
             </div>
 
@@ -98,11 +107,11 @@
                     <div class="seven wide column">
                         <h4 class="ui inverted header">Need my help? Contact me:</h4>
                         <p>
-                            <a href="https://www.linkedin.com/in/ieugen"><i class="large linkedin icon"></i></a>
-                            <a href="https://github.com/ieugen"><i class="large github icon"></i></a>
-                            <a href="https://twitter.com/ieugen222"><i class="large twitter icon"></i></a>
-                            <a href="https://www.facebook.com/ieugen222"><i class="large facebook icon"></i></a>
-                            <a href="https://www.instagram.com/ieugen222"><i class="large instagram icon"></i></a>
+                            <a href="https://www.linkedin.com/in/ieugen" target="_blank"><i class="large linkedin icon"></i></a>
+                            <a href="https://github.com/ieugen" target="_blank"><i class="large github icon"></i></a>
+                            <a href="https://twitter.com/ieugen222" target="_blank"><i class="large twitter icon"></i></a>
+                            <a href="https://www.facebook.com/ieugen222" target="_blank"><i class="large facebook icon"></i></a>
+                            <a href="https://www.instagram.com/ieugen222" target="_blank"><i class="large instagram icon"></i></a>
                         </p>
                         <p>I am looking for challanging projects.</p>
                         <p>Drop me aline and I will get back to you.</p>
