@@ -1,0 +1,3 @@
+rootProject.name = 'ieugen.ro'
+
+include ':cv'

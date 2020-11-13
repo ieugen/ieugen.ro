@@ -1,0 +1,34 @@
+plugins {
+  id 'org.asciidoctor.jvm.convert' version '3.3.0'
+  id 'org.asciidoctor.jvm.pdf' version '3.3.0'
+}
+
+description = 'Curriculum Vitae Eugen Stan :: Construiește HTML și PDF din AsciiDoc'
+
+asciidoctor {
+  languages 'en', 'ro'
+
+  sources {
+      include 'index.adoc'
+  }
+}
+
+asciidoctorj {
+
+  modules {
+      pdf {
+        version '1.5.3'
+      }
+  }
+  attributesForLang 'en',
+    langName : 'English',
+    'published-cv' : 'https://ieugen.ro/cv/en'
+
+  attributesForLang 'ro',
+    langName : 'Română',
+    'published-cv' : 'https://ieugen.ro/cv/ro'
+}
+
+asciidoctorPdf {
+  languages 'en', 'ro'
+}
