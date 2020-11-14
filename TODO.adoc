@@ -47,3 +47,19 @@ De stabilit și integrat canale sociale:
 
 * Logo actualizat
 * poza clasică pe munte image::img/ieugen.image.jpg
+
+
+== Analiza pe ieugen.ro
+- vom aduce imbunatatiri sitului personal ieugen.ro pentru a atrage potentiali clienti pentru Netdava
+    - vom crea un site de tip blog pe care sa putem scrie articole tehnice legate de serviciile pe care le putem oferi ca si companie cu linkuri spre netdava.com
+        - acesta va contine eventual si clipuri video (linkuri catre ele) cu tutoriale
+    - pe langa linkul cu cv-ul, vom adauga alte pagini:  Blog, Proiecte, Despre/Contact;
+    - actualizare logo - implementat cel nou;
+    - adaugare de elemente de branding personal
+    - optimizare seo ?!
+
+=== Pasi de urmat
+* discutie preliminara pe baza celor enumerate mai sus
+* stabilire pagini, continut
+* creare de wireframeuri
+* implementare
