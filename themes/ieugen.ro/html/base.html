@@ -9,6 +9,7 @@
     <meta name="keywords" content="">
     {% endblock %}
     <link rel="canonical" href="{{site-url}}{{uri}}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
@@ -18,6 +19,8 @@
     {% endif %}
 
     {% style "css/fomantic.css" %}
+    <link rel="stylesheet" type="text/css" href="../css/custom-style.css">
+
 </head>
 
 <body class="pushable">
@@ -26,11 +29,15 @@
     <div id="main-site-following-menu" class="ui hidden fixed top three item secondary pointing menu">
         <div class="ui container">
             <div class="item">
-                <img class="ui bottom aligned mini image" src="{{index-uri}}img/logos/ieugen-logo.png">
-                <span>{{title}}</span>
+                <img class="ui bottom aligned mini image" src="{{index-uri}}img/logos/ieugen-logo.svg">
+                <code>{{title}}</code>
             </div>
-            <a href="{{index-uri}}" class="item">Home</a>
-            <a href="{{index-uri}}cv/en" class="item">CV</a>
+            <div class="item">
+                <a href="{{index-uri}}" class="item">Home</a>
+                <a href="{{index-uri}}pages/about" class="item">About</a>
+                <a href="{{index-uri}}pages/projects" class="item">Projects</a>
+                <a href="{{index-uri}}cv/en" class="item">CV</a>
+            </div>
             <!-- <a href="#" class="item">Subscribe</a> -->
         </div>
     </div>
@@ -38,6 +45,8 @@
     <!-- Sidebar Menu -->
     <div class="ui vertical sidebar menu">
         <a href="{{index-uri}}" class="item">Home</a>
+        <a href="{{index-uri}}pages/about" class="item">About</a>
+        <a href="{{index-uri}}pages/projects" class="item">Projects</a>
         <a href="{{index-uri}}cv/en" class="item">CV</a>
         <!-- <a href="#" class="item">Subscribe</a> -->
     </div>
@@ -46,17 +55,20 @@
         <header class="ui Site header vertical masthead center aligned no-bottom-border segment">
             <div class="ui text container">
                 <h1 class="header">
-                    <img class="ui middle aligned tiny image logo" src="{{index-uri}}img/logos/ieugen-logo.png">
-                    <a href="{{index-uri}}"> {{title}}</a>
+                    <img class="ui middle aligned tiny image logo" src="{{index-uri}}img/logos/ieugen-logo.svg">
+                    <a href="{{index-uri}}" class="header-title">
+                        <code>{{title}}</code></a>
                 </h1>
             </div>
 
             <div class="ui container">
-                <div class="ui top two item secondary pointing menu">
+                <div class="ui top four item secondary pointing menu">
                     <div class="toc item">
                         <i class="sidebar icon"></i>
                     </div>
                     <a href="{{index-uri}}" class="item">Home</a>
+                    <a href="{{index-uri}}pages/about" class="item">About</a>
+                    <a href="{{index-uri}}pages/projects" class="item">Projects</a>
                     <a href="{{index-uri}}cv/en" class="item">CV</a>
                     <!-- <a href="#" class="item">Subscribe</a> -->
                 </div>
@@ -66,7 +78,7 @@
             {% endblock %}
         </main>
         <footer class="ui Site inverted vertical footer segment">
-            <!-- <div class="ui container">
+            <div class="ui container">
                 <div class="ui stackable inverted divided equal height grid">
                     <div class="three wide column">
                         <h4 class="ui inverted header">Legal</h4>
@@ -93,13 +105,20 @@
                         </div>
                     </div>
                     <div class="seven wide column">
-                        <h4 class="ui inverted header">Need my help?</h4>
+                        <h4 class="ui inverted header">Need my help? Contact me:</h4>
+                        <p>
+                            <a href="https://www.linkedin.com/in/ieugen" target="_blank"><i class="large linkedin icon"></i></a>
+                            <a href="https://github.com/ieugen" target="_blank"><i class="large github icon"></i></a>
+                            <a href="https://twitter.com/ieugen222" target="_blank"><i class="large twitter icon"></i></a>
+                            <a href="https://www.facebook.com/ieugen222" target="_blank"><i class="large facebook icon"></i></a>
+                            <a href="https://www.instagram.com/ieugen222" target="_blank"><i class="large instagram icon"></i></a>
+                        </p>
                         <p>I am looking for challanging projects.</p>
                         <p>Drop me aline and I will get back to you.</p>
                     </div>
                 </div>
-            </div> -->
-            <!-- <div class="ui horizaontal divider"></div> -->
+            </div>
+            <div class="ui horizaontal divider"></div>
             <div class="ui center aligned text container">
                 <span>Copyright &copy; {{today|date:yyyy}} {{author}}</span>
                 |
@@ -108,7 +127,6 @@
                 <span>Hosting by <a href="https://www.netlify.com/">Netlify</a></span>
             </div>
         </footer>
-
     </div>
 
     <!-- You MUST include jQuery before Fomantic -->
