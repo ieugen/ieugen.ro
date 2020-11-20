@@ -10,12 +10,12 @@ Eugen Stan <eugen@ieugen.ro>
 :sectlink:
 :experimental:
 :source-language: asciidoc
-:includedir: _includes
+// :includedir: _includes
 :attribute-missing: warn
 //:case-sensitive-attrs:
 
-include::../uris.adoc[]
-include::../definitions.adoc[]
+include::{includedir}/../uris.adoc[]
+include::{includedir}/../definitions.adoc[]
 
 :leveloffset: +1
 
@@ -31,27 +31,27 @@ Its source code is available at <<cv,cv repository>> on {MyGitHub}.
 ====
 endif::[]
 
-include::personal-details/index.adoc[]
+include::{includedir}/personal-details/index.adoc[]
 
 //<<<
-include::professional-experience/index.adoc[]
+include::{includedir}/professional-experience/index.adoc[]
 
 //<<<
-include::technical-writing/index.adoc[]
+include::{includedir}/technical-writing/index.adoc[]
 
 //<<<
-include::conferences-and-presentations/index.adoc[]
+include::{includedir}/conferences-and-presentations/index.adoc[]
 
 //<<<
-include::education/index.adoc[]
+include::{includedir}/education/index.adoc[]
 
 //<<<
-include::technical-skills/index.adoc[]
+include::{includedir}/technical-skills/index.adoc[]
 
 //<<<
-include::certifications/index.adoc[]
+include::{includedir}/certifications/index.adoc[]
 
 //<<<
-include::github-repositories/index.adoc[]
+include::{includedir}/github-repositories/index.adoc[]
 
 :leveloffset: -1
