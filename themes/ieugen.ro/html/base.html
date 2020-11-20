@@ -9,129 +9,132 @@
     <meta name="keywords" content="">
     {% endblock %}
     <link rel="canonical" href="{{site-url}}{{uri}}">
+    {% style "css/normalize.css" %}
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+    {% style "css/custom-style.css" %}
 
     {% if any page.klipse post.klipse %}
     <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
     {% endif %}
 
-    {% style "css/fomantic.css" %}
-    <link rel="stylesheet" type="text/css" href="../css/custom-style.css">
+    <!-- You MUST include jQuery before Fomantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/visibility.js"></script>
+    <script>
+        $(document)
+            .ready(function () {
 
+                // fix main menu to page on passing
+                $('.main.menu').visibility({
+                    type: 'fixed'
+                });
+                $('.overlay').visibility({
+                    type: 'fixed',
+                    offset: 80
+                });
+
+                // lazy load images
+                $('.image').visibility({
+                    type: 'image',
+                    transition: 'vertical flip in',
+                    duration: 500
+                });
+
+                // show dropdown on hover
+                $('.main.menu  .ui.dropdown').dropdown({
+                    on: 'hover'
+                });
+            })
+            ;
+    </script>
 </head>
 
-<body class="pushable">
-
-    <!-- Following Menu -->
-    <div id="main-site-following-menu" class="ui hidden fixed top three item secondary pointing menu">
-        <div class="ui container">
-            <div class="item">
-                <img class="ui bottom aligned mini image" src="{{index-uri}}img/logos/ieugen-logo.svg">
+<body>
+    <div class="ui main text center aligned container">
+        <h1 class="ui header">
+            <img class="ui bottom aligned mini image" src="img/logos/ieugen-logo.svg">
+            <a href="{{index-uri}}" class="header-title">
                 <code>{{title}}</code>
-            </div>
-            <div class="item">
-                <a href="{{index-uri}}" class="item">Home</a>
-                <a href="{{index-uri}}pages/about" class="item">About</a>
-                <a href="{{index-uri}}pages/projects" class="item">Projects</a>
-                <a href="{{index-uri}}cv/en" class="item">CV</a>
-            </div>
-            <!-- <a href="#" class="item">Subscribe</a> -->
+            </a>
+        </h1>
+    </div>
+
+
+    <div class="ui secondary five item main menu">
+        <div class="ui text container">
+            <a href="{{index-uri}}" class="item">Home</a>
+            <a href="{{index-uri}}pages/articles" class="item">Articles</a>
+            <a href="{{index-uri}}pages/about" class="item">About</a>
+            <a href="{{index-uri}}pages/projects" class="item">Projects</a>
+            <a href="{{index-uri}}cv/en" class="ui item button"><i class="external alternate small icon"></i>CV</a>
         </div>
     </div>
 
-    <!-- Sidebar Menu -->
-    <div class="ui vertical sidebar menu">
-        <a href="{{index-uri}}" class="item">Home</a>
-        <a href="{{index-uri}}pages/about" class="item">About</a>
-        <a href="{{index-uri}}pages/projects" class="item">Projects</a>
-        <a href="{{index-uri}}cv/en" class="item">CV</a>
-        <!-- <a href="#" class="item">Subscribe</a> -->
-    </div>
-
-    <div class="pusher Site">
-        <header class="ui Site header vertical masthead center aligned no-bottom-border segment">
-            <div class="ui text container">
-                <h1 class="header">
-                    <img class="ui middle aligned tiny image logo" src="{{index-uri}}img/logos/ieugen-logo.svg">
-                    <a href="{{index-uri}}" class="header-title">
-                        <code>{{title}}</code></a>
-                </h1>
-            </div>
-
-            <div class="ui container">
-                <div class="ui top four item secondary pointing menu">
-                    <div class="toc item">
-                        <i class="sidebar icon"></i>
-                    </div>
-                    <a href="{{index-uri}}" class="item">Home</a>
-                    <a href="{{index-uri}}pages/about" class="item">About</a>
-                    <a href="{{index-uri}}pages/projects" class="item">Projects</a>
-                    <a href="{{index-uri}}cv/en" class="item">CV</a>
-                    <!-- <a href="#" class="item">Subscribe</a> -->
-                </div>
-        </header>
-        <main class="ui Site content vertical no-bottom-border segment">
-            {% block content %}
-            {% endblock %}
-        </main>
-        <footer class="ui Site inverted vertical footer segment">
-            <div class="ui container">
-                <div class="ui stackable inverted divided equal height grid">
-                    <div class="three wide column">
-                        <h4 class="ui inverted header">Legal</h4>
-                        <div class="ui inverted linked list">
-                            <a class="item" href="{{index-uri}}sitemap.xml">License</a>
-                            <a class="item" href="{{index-uri}}sitemap.xml">Privacy Policy</a>
-                            <a class="item" href="{{index-uri}}sitemap.xml">Contact</a>
-                        </div>
-                    </div>
-                    <div class="three wide column">
-                        <h4 class="ui inverted header">About</h4>
-                        <div class="ui inverted linked list">
-                            <a class="item" href="{{index-uri}}sitemap.xml" target="_blank">Sitemap</a>
-                            <a class="item" href="{{index-uri}}archives">Archive</a>
-                            <a class="item" href="{{index-uri}}feed.xml" target="_blank">RSS <i
-                                    class="rss square icon"></i></a>
-                        </div>
-                    </div>
-                    <div class="three wide column">
-                        <h4 class="ui inverted header">Projects</h4>
-                        <div class="ui inverted linked list">
-                            <a href="{{index-uri}}/pages/zetar" class="item">Zețar</a>
-                            <a href="{{index-uri}}/pages/lets-build-a-saas-app" class="item">Let's build a SaaS App</a>
-                        </div>
-                    </div>
-                    <div class="seven wide column">
-                        <h4 class="ui inverted header">Need my help? Contact me:</h4>
-                        <p>
-                            <a href="https://www.linkedin.com/in/ieugen" target="_blank"><i class="large linkedin icon"></i></a>
-                            <a href="https://github.com/ieugen" target="_blank"><i class="large github icon"></i></a>
-                            <a href="https://twitter.com/ieugen222" target="_blank"><i class="large twitter icon"></i></a>
-                            <a href="https://www.facebook.com/ieugen222" target="_blank"><i class="large facebook icon"></i></a>
-                            <a href="https://www.instagram.com/ieugen222" target="_blank"><i class="large instagram icon"></i></a>
-                        </p>
-                        <p>I am looking for challanging projects.</p>
-                        <p>Drop me aline and I will get back to you.</p>
+    {% block content %}
+    {% endblock %}
+    <footer class="ui Site inverted vertical footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted divided equal height grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Legal</h4>
+                    <div class="ui inverted linked list">
+                        <a class="item" href="{{index-uri}}sitemap.xml">License</a>
+                        <a class="item" href="{{index-uri}}sitemap.xml">Privacy Policy</a>
+                        <a class="item" href="{{index-uri}}pages/about#contact">Contact</a>
                     </div>
                 </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">About</h4>
+                    <div class="ui inverted linked list">
+                        <a class="item" href="{{index-uri}}sitemap.xml" target="_blank">Sitemap</a>
+                        <a class="item" href="{{index-uri}}archives">Archive</a>
+                        <a class="item" href="{{index-uri}}feed.xml" target="_blank">RSS <i
+                                class="rss square icon"></i></a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Projects</h4>
+                    <div class="ui inverted linked list">
+                        <a href="{{index-uri}}/pages/zetar" class="item">Zețar</a>
+                        <a href="{{index-uri}}/pages/lets-build-a-saas-app" class="item">Let's build a SaaS App</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Need my help? Contact me:</h4>
+                    <p>
+                        <a href="https://www.linkedin.com/in/ieugen" target="_blank"><i
+                                class="large linkedin icon"></i></a>
+                        <a href="https://github.com/ieugen" target="_blank"><i class="large github icon"></i></a>
+                        <a href="https://twitter.com/ieugen222" target="_blank"><i class="large twitter icon"></i></a>
+                        <a href="https://www.facebook.com/ieugen222" target="_blank"><i
+                                class="large facebook icon"></i></a>
+                        <a href="https://www.instagram.com/ieugen222" target="_blank"><i
+                                class="large instagram icon"></i></a>
+                    </p>
+                    <p>I am looking for challanging projects.</p>
+                    <p>Drop me aline and I will get back to you.</p>
+                </div>
             </div>
-            <div class="ui horizaontal divider"></div>
-            <div class="ui center aligned text container">
-                <span>Copyright &copy; {{today|date:yyyy}} {{author}}</span>
-                |
-                <span>Powered by <a href="https://cryogenweb.org">Cryogen</a></span>
-                |
-                <span>Hosting by <a href="https://www.netlify.com/">Netlify</a></span>
-            </div>
-        </footer>
+        </div>
+        <div class="ui horizaontal divider"></div>
+        <div class="ui center aligned text container">
+            <span>Copyright &copy; {{today|date:yyyy}} {{author}}</span>
+            |
+            <span>Powered by <a href="https://cryogenweb.org">Cryogen</a></span>
+            |
+            <span>Hosting by <a href="https://www.netlify.com/">Netlify</a></span>
+        </div>
+    </footer>
     </div>
 
-    <!-- You MUST include jQuery before Fomantic -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+
 
     {% script "js/highlight.pack.js" %}
     <script>
@@ -147,28 +150,6 @@
     <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
     <!-- <script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script> -->
     {% endif %}
-
-    <script>
-        $(document)
-            .ready(function () {
-
-                // fix menu when passed
-                $('.masthead')
-                    .visibility({
-                        once: false,
-                        onBottomPassed: function () {
-                            $('.fixed.menu').transition('fade in');
-                        },
-                        onBottomPassedReverse: function () {
-                            $('.fixed.menu').transition('fade out');
-                        }
-                    });
-
-                // create sidebar and attach to menu open
-                $('.ui.sidebar')
-                    .sidebar('attach events', '.toc.item');
-            });
-    </script>
 </body>
 
 </html>

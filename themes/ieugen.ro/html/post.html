@@ -12,7 +12,8 @@
 <meta property="og:type" content="article" />
 {% endblock %}
 {% block content %}
-<div class="ui container">
+<div class="ui text container">
+    <h1 class="ui dividing header">{{page.title}}</h1>
     <div id="post">
         {% include "/html/post-content.html" %}
         <div id="prev-next">

@@ -1,11 +1,9 @@
 {% extends "/html/base.html" %}
 {%block subtitle %}: Archives{% endblock %}
 {% block content %}
-<div class="ui container">
+<div class="ui main text container">
     <div id="posts">
-        <div id="page-header">
-            <h2>Archives</h2>
-        </div>
+            <h1 class="ui dividing header">Archives</h2>
         {% for group in groups %}
         <h4>{{group.group}}</h4>
         <ul>

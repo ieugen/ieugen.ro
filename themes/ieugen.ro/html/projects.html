@@ -2,45 +2,8 @@
 {% block content %}
 
 <div class="ui main text container">
-    <div class="ui items raised segment">
-        <div class="item">
-            <a class="ui small circular image">
-                <img src="img/ieugen-image.jpg" alt="photo of me and the mountains">
-            </a>
-            <div class="content">
-                <a class="header">Hi! I'm Eugen Stan.</a>
-                <div class="description">
-                    <p>I'm a software engineer building open-source projects and writing about programming.</p>
-                    <p>I believe technology should serve people and I do my best to achieve that goal.</p>
-                    <a class="ui icon right floated basic button" href="https://github.com/ieugen">
-                        <i class="git alternate"></i>GitHub</a>
-                    <!-- <button class="ui basic right floated button">Join Newsletter</button> -->
-                    <a class="ui basic right floated button" href="{{index-uri}}pages/about">About me</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h3 class="ui horizontal divider header">Recent posts</h3>
-    <div class="ui relaxed divided list">
-        {% for post in latest-posts %}
-        <div class="item">
-            <div class="image post-date-wrapper">{{post.date|date:"MMM dd":ro}}</div>
-            <div class="content recent-post-title-wrapper">
-                <a class="header" href="{{post.uri}}">{{post.title}}</a>
-                <div class="description">
-                    <i class="tags icon"></i>
-                    {%for tag in post.tags %}
-                    <a href="{{tag.uri}}">{{tag.name}}</a>
-                    {% endfor%}
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-    <h3 class="ui horizontal divider header">My Projects</h3>
-    <div class="ui three stackable cards">
+    <h1 class="ui dividing header">{{page.title}}</h1>
+    <div class="ui two stackable cards">
         <div class="card">
             <div class="content">
                 <div class="header">inbox-iterator</div>
@@ -93,5 +56,9 @@
             </div>
         </div>
     </div>
+    </div>
+</div>
+
+
 </div>
 {% endblock %}
