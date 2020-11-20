@@ -24,4 +24,7 @@ Citește documentația de acolo cel puțin o dată.
     # Construiește situl și pornește un server web local
     lein run
     cd site-build && python3 -m http.server
+
+    # Pornește situl în mod dezvoltare - randează paginile instant
+    lein ring server
 --
