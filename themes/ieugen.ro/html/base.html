@@ -57,28 +57,30 @@
 </head>
 
 <body>
-    <div class="ui main text center aligned container">
-        <h1 class="ui header">
-            <img class="ui bottom aligned mini image" src="img/logos/ieugen-logo.svg">
-            <a href="{{index-uri}}" class="header-title">
-                <code>{{title}}</code>
-            </a>
-        </h1>
-    </div>
-
-
-    <div class="ui secondary five item main menu">
-        <div class="ui text container">
-            <a href="{{index-uri}}" class="item">Home</a>
-            <a href="{{index-uri}}pages/articles" class="item">Articles</a>
-            <a href="{{index-uri}}pages/about" class="item">About</a>
-            <a href="{{index-uri}}pages/projects" class="item">Projects</a>
-            <a href="{{index-uri}}cv/en" class="ui item button"><i class="external alternate small icon"></i>CV</a>
+    <div class="content">
+        <div class="ui main text center aligned container">
+            <h1 class="ui header">
+                <img class="ui bottom aligned mini image" src="img/logos/ieugen-logo.svg">
+                <a href="{{index-uri}}" class="header-title">
+                    <code>{{title}}</code>
+                </a>
+            </h1>
         </div>
+    
+    
+        <div class="ui secondary five item main menu">
+            <div class="ui text container">
+                <a href="{{index-uri}}" class="item">Home</a>
+                <a href="{{index-uri}}pages/articles" class="item">Articles</a>
+                <a href="{{index-uri}}pages/about" class="item">About</a>
+                <a href="{{index-uri}}pages/projects" class="item">Projects</a>
+                <a href="{{index-uri}}cv/en" class="ui item button"><i class="external alternate small icon"></i>CV</a>
+            </div>
+        </div>
+    
+        {% block content %}
+        {% endblock %}
     </div>
-
-    {% block content %}
-    {% endblock %}
     <footer class="ui Site inverted vertical footer segment">
         <div class="ui container">
             <div class="ui stackable inverted divided equal height grid">
