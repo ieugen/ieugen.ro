@@ -26,9 +26,14 @@
     <!-- You MUST include jQuery before Fomantic -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
-    <script src="js/dropdown.js"></script>
-    <script src="js/transition.js"></script>
-    <script src="js/visibility.js"></script>
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/transition.js"></script>
+    <script src="/js/visibility.js"></script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="/js/index/lunr_index.js"></script>
+    <script src="/js/lunrclient.js"></script>
+    {% script "js/scripts.js" %}
+    <script>window.onload = start;</script>
     <script>
         $(document)
             .ready(function () {
@@ -68,18 +73,19 @@
                 </a>
             </h1>
         </div>
-    
-    
+
+
         <div class="ui secondary five item main menu">
             <div class="ui text container">
                 <a href="{{index-uri}}" class="item">Home</a>
                 <a href="{{index-uri}}pages/articles" class="item">Articles</a>
                 <a href="{{index-uri}}pages/about" class="item">About</a>
                 <a href="{{index-uri}}pages/projects" class="item">Projects</a>
-                <a href="{{index-uri}}cv/en" class="ui item button"><i class="external alternate small icon"></i>CV</a>
+                <a href="{{index-uri}}cv/en" class="ui item button" target="_blank"><i
+                        class="external alternate small icon"></i>CV</a>
             </div>
         </div>
-    
+
         {% block content %}
         {% endblock %}
     </div>
@@ -90,7 +96,7 @@
                     <h4 class="ui inverted header">Legal</h4>
                     <div class="ui inverted linked list">
                         <a class="item" href="{{index-uri}}sitemap.xml">License</a>
-                        <a class="item" href="{{index-uri}}sitemap.xml">Privacy Policy</a>
+                        <a class="item" href="{{index-uri}}pages/privacy-policy">Privacy Policy</a>
                         <a class="item" href="{{index-uri}}pages/about#contact">Contact</a>
                     </div>
                 </div>
