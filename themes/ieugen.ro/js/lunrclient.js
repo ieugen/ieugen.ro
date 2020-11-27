@@ -28,10 +28,9 @@ function parseLunrResults(results) {
         var preview = item["p"];
         var link = item["l"];
         var post_date = item["post-date"]
-        // var parsed_post_date = moment(post_date).format('l').locale("ro-RO");
         var result = ('<div class="ui card fluid"><div class="content"><div class="header"><a href="/' + link + '">'
-                    + title + '</a></div><div class="description"><span>{{' + post_date + '|date:"MMM dd":ro}} </span></div><div class="meta"><span class="result-preview description">'
-                    + preview + '</span></div></div></div>');
+                    + title + '</a></div><div class="description"><span>' + post_date +'</span></div><div class="meta"><span class="result-preview description">'
+                    + preview  + '</span></div></div></div>');
 
         html.push(result);
     }

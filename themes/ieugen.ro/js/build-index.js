@@ -56,6 +56,7 @@ function readHtml(root, file, fileId) {
     link = link.replace("index.html", "")
     var parsed_title = $("meta[property='og:title']").attr("content");
     var post_date = $("meta[property='og:date']").attr("content");
+    
     console.log("postttt dateeeeee ", post_date);
     if (typeof title == 'undefined') title = file;
     var description = $("meta[name=description]").attr("content");
@@ -97,7 +98,7 @@ function buildPreviews(docs) {
     for (var i = 0; i < docs.length; i++) {
         var doc = docs[i];
         var preview = doc["d"];
-        if (preview == "") preview = doc["b"];
+        // if (preview == "") preview = doc["b"];
         if (preview.length > MAX_PREVIEW_CHARS)
             preview = preview.slice(0, MAX_PREVIEW_CHARS) + " ...";
         result[doc["id"]] = {

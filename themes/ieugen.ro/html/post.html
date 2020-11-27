@@ -10,7 +10,7 @@
 <meta property="og:url" content="{{site-url}}{{uri}}" />
 <meta property="og:title" content="{{post.title}}" />
 <meta property="og:type" content="article" />
-<meta property="og:date" content="{{post.date}}" />
+<meta property="og:date" content="{{post.date|date:"dd MMM, yyyy":ro}}" />
 {% endblock %}
 {% block content %}
 <div class="ui text container">
