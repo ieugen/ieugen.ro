@@ -1,10 +1,6 @@
 html, body {
   height: 100%;
 }
-.posts-list {
-    padding: 15px;
-}
-
 body {
   background-color: #FFFFFF;
   display: flex;
@@ -78,4 +74,13 @@ div.paragraph p {
 }
 .footer {
   flex-shrink: 0;
+}
+.about-me-img p span img {
+  width: 100%;
+}
+.posts-list {
+  padding: 15px;
+}
+ul li {
+  list-style: none;
 }
