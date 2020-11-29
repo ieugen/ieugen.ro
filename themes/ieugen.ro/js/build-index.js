@@ -5,7 +5,7 @@ var cheerio = require("cheerio");
 
 
 // Change these constants to suit your needs
-const HTML_FOLDER = "site-build/posts";  // folder with your HTML files
+const HTML_FOLDER = "public/posts";  // folder with your HTML files
 // Valid search fields: "title", "description", "keywords", "body"
 const SEARCH_FIELDS = ["title", "description", "keywords", "body"];
 const EXCLUDE_FILES = ["search.html"];
@@ -18,7 +18,6 @@ function isHtml(filename) {
     lower = filename.toLowerCase();
     return (lower.endsWith(".htm") || lower.endsWith(".html"));
 }
-
 
 function findHtml(folder) {
     if (!fs.existsSync(folder)) {
@@ -56,7 +55,7 @@ function readHtml(root, file, fileId) {
     link = link.replace("index.html", "")
     var parsed_title = $("meta[property='og:title']").attr("content");
     var post_date = $("meta[property='og:date']").attr("content");
-    
+
     console.log("postttt dateeeeee ", post_date);
     if (typeof title == 'undefined') title = file;
     var description = $("meta[name=description]").attr("content");
