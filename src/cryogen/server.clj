@@ -16,13 +16,13 @@
 (defn init []
   (load-plugins)
   (compile-assets-timed)
-  (let [ignored-files (-> (resolve-config) :ignored-files)]
+  (let [ignored-files (-> (resolve-config) :ignored-files)
+        public-dest (-> (resolve-config) :public-dest)]
     (start-watcher! "content" ignored-files compile-assets-timed)
     (start-watcher! "themes" ignored-files compile-assets-timed)
-    (println "Start Live Reload")
-    (live-reload/start! {:paths ["content", "themes", "public"]
-                         :debug? true})
-    )
+    (println (str "Start Live Reload " public-dest))
+    (live-reload/start! {:paths [public-dest]
+                         :debug? true}))
   )
 
 (defn wrap-subdirectories
