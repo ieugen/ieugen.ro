@@ -1,4 +1,4 @@
-{:site-title                   "(defn Eugen-Stan [_] (awesome))"
+{:site-title                   "(defn Eugen-Stan [_] awesome)"
  :author                       "(Eugen Stan)"
  :description                  "A place to dump the extra stuff my brain can't handle."
  :site-url                     "https://www.ieugen.ro/"
