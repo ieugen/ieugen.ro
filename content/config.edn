@@ -1,6 +1,6 @@
 {:site-title                   "(defn Eugen-Stan [_] awesome)"
  :author                       "(Eugen Stan)"
- :description                  "A place to dump the extra stuff my brain can't handle."
+ :description                  "I write about stuff I find intersting."
  :site-url                     "https://www.ieugen.ro/"
  :post-root                    "posts"
  :page-root                    "pages"
