@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <title>{{title}}{% block subtitle %}{% endblock %}</title>
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
     {% block meta %}
     <meta name="description" content="{{description}}">
     <meta name="keywords" content="">
@@ -24,9 +26,14 @@
     <!-- You MUST include jQuery before Fomantic -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
-    <script src="js/dropdown.js"></script>
-    <script src="js/transition.js"></script>
-    <script src="js/visibility.js"></script>
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/transition.js"></script>
+    <script src="/js/visibility.js"></script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="/js/index/lunr_index.js"></script>
+    <script src="/js/lunrclient.js"></script>
+    {% script "js/scripts.js" %}
+    <script>window.onload = start;</script>
     <script>
         $(document)
             .ready(function () {
@@ -57,28 +64,31 @@
 </head>
 
 <body>
-    <div class="ui main text center aligned container">
-        <h1 class="ui header">
-            <img class="ui bottom aligned mini image" src="img/logos/ieugen-logo.svg">
-            <a href="{{index-uri}}" class="header-title">
-                <code>{{title}}</code>
-            </a>
-        </h1>
-    </div>
-
-
-    <div class="ui secondary five item main menu">
-        <div class="ui text container">
-            <a href="{{index-uri}}" class="item">Home</a>
-            <a href="{{index-uri}}pages/articles" class="item">Articles</a>
-            <a href="{{index-uri}}pages/about" class="item">About</a>
-            <a href="{{index-uri}}pages/projects" class="item">Projects</a>
-            <a href="{{index-uri}}cv/en" class="ui item button"><i class="external alternate small icon"></i>CV</a>
+    <div class="content">
+        <div class="ui main text center aligned container">
+            <h1 class="ui header">
+                <img class="ui bottom aligned mini image" src="img/logos/ieugen-logo.svg">
+                <a href="{{index-uri}}" class="header-title">
+                    <code>{{title}}</code>
+                </a>
+            </h1>
         </div>
-    </div>
 
-    {% block content %}
-    {% endblock %}
+
+        <div class="ui secondary five item main menu">
+            <div class="ui text container">
+                <a href="{{index-uri}}" class="item">Home</a>
+                <a href="{{index-uri}}pages/articles" class="item">Articles</a>
+                <a href="{{index-uri}}pages/about" class="item">About</a>
+                <a href="{{index-uri}}pages/projects" class="item">Projects</a>
+                <a href="{{index-uri}}cv/en" class="ui item button" target="_blank"><i
+                        class="external alternate small icon"></i>CV</a>
+            </div>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+    </div>
     <footer class="ui Site inverted vertical footer segment">
         <div class="ui container">
             <div class="ui stackable inverted divided equal height grid">
@@ -86,7 +96,7 @@
                     <h4 class="ui inverted header">Legal</h4>
                     <div class="ui inverted linked list">
                         <a class="item" href="{{index-uri}}sitemap.xml">License</a>
-                        <a class="item" href="{{index-uri}}sitemap.xml">Privacy Policy</a>
+                        <a class="item" href="{{index-uri}}pages/privacy-policy">Privacy Policy</a>
                         <a class="item" href="{{index-uri}}pages/about#contact">Contact</a>
                     </div>
                 </div>

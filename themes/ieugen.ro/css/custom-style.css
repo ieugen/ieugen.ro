@@ -1,9 +1,10 @@
-.posts-list {
-    padding: 15px;
+html, body {
+  height: 100%;
 }
-
 body {
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
 }
 .main.container {
   margin-top: 2em;
@@ -67,4 +68,19 @@ div.paragraph p {
 }
 .recent-post-title-wrapper {
   padding-left: 20px !important;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+.about-me-img p span img {
+  width: 100%;
+}
+.posts-list {
+  padding: 15px;
+}
+ul li {
+  list-style: none;
 }
