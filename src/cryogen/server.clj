@@ -15,7 +15,16 @@
 
 (defn init []
   (load-plugins)
-  (compile-assets-timed)
+  (compile-assets-timed {:extend-params-fn
+                         (fn extend-params [params site-data]
+                           (let [tag-count (->> (:posts-by-tag site-data)
+                                                (map (fn [[k v]] [k (count v)]))
+                                                (into {}))]
+                             (update
+                              params :tags
+                              #(map (fn [t] (assoc t
+                                                   :count (tag-count (:name t))))
+                                    %))))})
   (let [ignored-files (-> (resolve-config) :ignored-files)
         public-dest (-> (resolve-config) :public-dest)]
     (start-watcher! "content" ignored-files compile-assets-timed)
