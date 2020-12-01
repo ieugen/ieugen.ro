@@ -81,6 +81,15 @@ div.paragraph p {
 .posts-list {
   padding: 15px;
 }
-ul li {
-  list-style: none;
+#social ul li {
+  list-style-type: none;
+}
+#social ul li p .icon {
+  font-size: 18px;
+}
+#social ul li p a {
+  margin-left: 10px;
+}
+a.post-tag {
+  padding: 0 2px;
 }

@@ -14,6 +14,7 @@
     {% style "css/normalize.css" %}
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
@@ -67,7 +68,7 @@
     <div class="content">
         <div class="ui main text center aligned container">
             <h1 class="ui header">
-                <img class="ui bottom aligned mini image" src="/img/logos/ieugen-logo.svg">
+                <img class="ui middle aligned tiny image" src="/img/logos/ieugen-logo.svg">
                 <a href="{{index-uri}}" class="header-title">
                     <code>{{title}}</code>
                 </a>
@@ -104,6 +105,7 @@
                     <h4 class="ui inverted header">About</h4>
                     <div class="ui inverted linked list">
                         <a class="item" href="{{index-uri}}sitemap.xml" target="_blank">Sitemap</a>
+                        <a class="item" href="{{index-uri}}pages/site-pages">Pages</a>
                         <a class="item" href="{{index-uri}}tags">Tags</a>
                         <a class="item" href="{{index-uri}}archives">Archive</a>
                         <a class="item" href="{{index-uri}}feed.xml" target="_blank">RSS <i
@@ -113,8 +115,8 @@
                 <div class="three wide column">
                     <h4 class="ui inverted header">Projects</h4>
                     <div class="ui inverted linked list">
-                        <a href="{{index-uri}}/pages/zetar" class="item">Zețar</a>
-                        <a href="{{index-uri}}/pages/lets-build-a-saas-app" class="item">Let's build a SaaS App</a>
+                        <a href="{{index-uri}}pages/zetar" class="item">Zețar</a>
+                        <a href="{{index-uri}}pages/lets-build-a-saas-app" class="item">Let's build a SaaS App</a>
                     </div>
                 </div>
                 <div class="seven wide column">

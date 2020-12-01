@@ -56,7 +56,7 @@ function readHtml(root, file, fileId) {
     var parsed_title = $("meta[property='og:title']").attr("content");
     var post_date = $("meta[property='og:date']").attr("content");
 
-    console.log("postttt dateeeeee ", post_date);
+  
     if (typeof title == 'undefined') title = file;
     var description = $("meta[name=description]").attr("content");
     if (typeof description == 'undefined') description = "";
