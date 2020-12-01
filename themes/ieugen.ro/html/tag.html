@@ -1,18 +1,14 @@
 {% extends "/html/base.html" %}
 {%block subtitle %}: Posts Tagged &quot;{{name}}&quot;{% endblock %}
 {% block content %}
-<div class="ui container">
-    <div id="posts-by-tag">
-        <div id="page-header">
-            <h2>Posts Tagged &quot;{{name}}&quot;</h2>
+<div class="ui main text container">
+    <h1 class="ui dividing header">Posts Tagged &quot;{{name}}&quot;</h1>
+    <div id="tags-page">
+        <div class="ui list">
+            {% for post in posts %}
+            <div class="item"><a href="{{post.uri}}">{{post.title}}</a></div>
+            {% endfor %}
         </div>
-        <ul>
-        {% for post in posts %}
-            <li>
-                <a href="{{post.uri}}">{{post.title}}</a>
-            </li>
-        {% endfor %}
-        </ul>
     </div>
 </div>
 {% endblock %}
