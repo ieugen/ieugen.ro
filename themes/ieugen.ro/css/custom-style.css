@@ -90,3 +90,6 @@ div.paragraph p {
 #social ul li p a {
   margin-left: 10px;
 }
+a.post-tag {
+  padding: 0 2px;
+}

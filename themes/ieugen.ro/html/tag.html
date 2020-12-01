@@ -6,7 +6,21 @@
     <div id="tags-page">
         <div class="ui list">
             {% for post in posts %}
-            <div class="item"><a href="{{post.uri}}">{{post.title}}</a></div>
+            <div class="ui card fluid">
+                <div class="content">
+                    <div class="header"><a href="{{post.uri}}">{{post.title}}</a></div>
+                    <div class="description">
+                        <span>{{post.date|date:"dd MMM, yyyy":ro}}</span>
+                    </div>
+                    <div class="meta">
+                        <div class="description">
+                            {% if post.description %}
+                            {{post.description}}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
             {% endfor %}
         </div>
     </div>
