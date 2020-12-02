@@ -444,7 +444,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Eugen Stan</span><br>
 <span id="email" class="email"><a href="mailto:eugen@ieugen.ro">eugen@ieugen.ro</a></span><br>
-<span id="revdate">2020-05-15 07:36:25 +0300</span>
+<span id="revdate">2020-12-02 21:23:02 +0200</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -543,10 +543,10 @@ I took a break from coding during most of my college years.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>ieugen [<a href="https://ieugen.ro">https://ieugen.ro</a> (<em><span class="red">Rebooting - migrating to CryogenWeb, a <a href="https://clojure.org/">Clojure</a> static web generator</span>)</em>]</p>
+<p>ieugen [<a href="https://ieugen.ro">https://ieugen.ro</a>]</p>
 </li>
 <li>
-<p>blog.ieugen.ro [<a href="https://blog.ieugen.ro/">https://blog.ieugen.ro/</a>  (<em><span class="red">planned migration to ieugen.ro/blog</span></em>)]</p>
+<p>blog.ieugen.ro [<a href="https://blog.ieugen.ro/">https://blog.ieugen.ro/</a>  (<em><span class="red">old, will migrate to ieugen.ro</span></em>)]</p>
 </li>
 </ul>
 </div>
@@ -585,12 +585,74 @@ I took a break from coding during most of my college years.</p>
 <span class="icon"><i class="fa fa-group"></i></span> <a href="https://netdava.com/">Netdava</a></p>
 </div>
 <div class="paragraph">
-<p>This is my second company. I use this company to work on various projects.</p>
+<p>I do client work through my company. If you think I can help you or your company please let me know.
+Since october 2020 I&#8217;ve started publishing regularly on my blog - <a href="https://ieugen.ro">https://ieugen.ro</a>.
+I go into more details there.</p>
 </div>
 <div class="sect3">
-<h4 id="_api_integration_manychat_and_netopia_mobilpay"><a class="anchor" href="#_api_integration_manychat_and_netopia_mobilpay"></a>API integration <a href="https://manychat.com/">Manychat</a> and <a href="https://netopia-payments.com">Netopia Mobilpay</a></h4>
+<h4 id="_cloud_migration_for_a_romanian_online_retail_company"><a class="anchor" href="#_cloud_migration_for_a_romanian_online_retail_company"></a>Cloud migration for a Romanian online retail company</h4>
 <div class="paragraph">
-<p><span class="icon"><i class="fa fa-calendar"></i></span> May 2020, <a href="https://www.robomarketing.ro/">Robomarketing.ro</a></p>
+<p><span class="icon"><i class="fa fa-calendar"></i></span> October 2020 - Ongoing, Online retail</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;m working with an online retailer from Romania to adopt cloud tools, build a delivery pipeline and inprove their time to market.
+The end goal is to enable the client to grow their IT team in a manageable way.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;m helping them migrate to cloud (Kubernetes), build a CI/CD pipeline.
+All this is setup with <a href="https://en.wikipedia.org/wiki/Single_sign-on">Single Sign on</a> via <a href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">LDAP</a> and <a href="https://oauth.net/2/">Oauth2</a>.
+It has been mostly infrastructure work with some <a href="http://www.oracle.com/technetwork/java/javase/overview/index.html">Java</a> on the side.</p>
+</div>
+<div class="paragraph">
+<p>Some of the tools we used are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.ansible.com/">RedHat Ansible</a> - for infrastructure setup</p>
+</li>
+<li>
+<p><a href="https://jenkins.io/">Jenkins</a> - with declarative pipelines as a CI/CD build tool</p>
+</li>
+<li>
+<p><a href="https://www.docker.com/">Docker</a> - to build containers images</p>
+</li>
+<li>
+<p><a href="https://kubernetes.io/">Kubernetes</a> - as an application scheduler</p>
+</li>
+<li>
+<p><a href="https://freeipa.org/">FreeIPA</a> - for identity management to nodes and applications</p>
+</li>
+<li>
+<p><a href="https://gradle.org/">Gradle</a> - to build the Java application</p>
+</li>
+<li>
+<p><a href="https://git-scm.org">git</a> - for version control</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We&#8217;ve also helped them build a monitoring system with <a href="https://prometheus.io/">Prometheus</a> and <a href="https://grafana.com/">Grafana</a> so they can better monitor their production systems.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_internal_projects"><a class="anchor" href="#_internal_projects"></a>Internal projects</h4>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-calendar"></i></span> June 2020, September 2020 <a href="https://netdava.com/">Netdava</a></p>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve spent some time working on company internal projects and infrastructure.
+We&#8217;ve also built a <a href="https://clojurescript.org/">ClojureScript</a> single page application for converting bank statements from a custom CSV to <a href="https://www.ofx.net/" class="bare">https://www.ofx.net/</a> [Open Financial Exchange] format.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://gitlab.com/netdava/homebank-ofx/">https://gitlab.com/netdava/homebank-ofx/ Source</a>
+<a href="https://netdava.gitlab.io/homebank-ofx/">https://netdava.gitlab.io/homebank-ofx/ Live</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_api_integration_manychat_silferbots_and_netopia_mobilpay"><a class="anchor" href="#_api_integration_manychat_silferbots_and_netopia_mobilpay"></a>API integration <a href="https://manychat.com/">Manychat</a>, <a href="https://silferbots.co/">Silferbots</a> and <a href="https://netopia-payments.com">Netopia Mobilpay</a></h4>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-calendar"></i></span> May 2020 &#8594; June 2020, <a href="https://www.robomarketing.ro/">Robomarketing.ro</a></p>
 </div>
 <div class="paragraph">
 <p>The client wanted to enable card payment via <a href="https://messenger.com/">Facebook Messenger</a> marketing robots. I&#8217;ve used <a href="http://php.net/">PHP</a> with <a href="https://laravel.com/">Laravel Framework</a> and <a href="https://www.docker.com/">Docker</a> to build an <a href="https://en.wikipedia.org/wiki/Application_programming_interface">API</a> integration on top of the clients existing <a href="https://wordpress.com/">Wordpress</a> hosting solution.</p>
@@ -1009,7 +1071,7 @@ The class/course should be about something I like or find interesting, in fields
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-05-15 07:31:33 +0300
+Last updated 2020-11-14 21:26:50 +0200
 </div>
 </div>
 </body>

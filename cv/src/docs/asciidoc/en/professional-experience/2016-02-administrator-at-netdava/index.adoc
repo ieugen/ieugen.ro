@@ -4,10 +4,43 @@
 icon:calendar[] `February 2016 to Now (Ongoing)` +
 icon:group[] {Netdava}
 
-This is my second company. I use this company to work on various projects.
+I do client work through my company. If you think I can help you or your company please let me know.
+Since october 2020 I've started publishing regularly on my blog - {ieugen-ro}.
+I go into more details there.
 
-== API integration {Manychat} and {Mobilpay}
-icon:calendar[] May 2020, {Robomarketing}
+== Cloud migration for a Romanian online retail company
+icon:calendar[] October 2020 - Ongoing, Online retail
+
+I'm working with an online retailer from Romania to adopt cloud tools, build a delivery pipeline and inprove their time to market.
+The end goal is to enable the client to grow their IT team in a manageable way.
+
+I'm helping them migrate to cloud (Kubernetes), build a CI/CD pipeline.
+All this is setup with {SSO} via {ldap} and {Oauth2}.
+It has been mostly infrastructure work with some {Java} on the side.
+
+Some of the tools we used are:
+
+* {ansible} - for infrastructure setup
+* {Jenkins} - with declarative pipelines as a CI/CD build tool
+* {Docker} - to build containers images
+* {Kubernetes} - as an application scheduler
+* {FreeIPA} - for identity management to nodes and applications
+* {Gradle} - to build the Java application
+* {git} - for version control
+
+We've also helped them build a monitoring system with {Prometheus} and {Grafana} so they can better monitor their production systems.
+
+== Internal projects
+icon:calendar[] June 2020, September 2020 {Netdava}
+
+I've spent some time working on company internal projects and infrastructure.
+We've also built a {ClojureScript} single page application for converting bank statements from a custom CSV to {OpenFinancialExchange} format.
+
+link:https://gitlab.com/netdava/homebank-ofx/[https://gitlab.com/netdava/homebank-ofx/ Source]
+link:https://netdava.gitlab.io/homebank-ofx/[https://netdava.gitlab.io/homebank-ofx/ Live]
+
+== API integration {Manychat}, {Silferbots} and {Mobilpay}
+icon:calendar[] May 2020 -> June 2020, {Robomarketing}
 
 The client wanted to enable card payment via {Messenger} marketing robots. I've used {PHP} with {Laravel} and {Docker} to build an {API} integration on top of the clients existing {Wordpress} hosting solution.
 

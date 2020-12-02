@@ -24,8 +24,8 @@ Contacts::
 * icon:phone[] Mobile Phone/WhatsApp: {MyPhone}
 * icon:skype[] Skype: {MySkypeID}
 WebSites::
-* ieugen [https://ieugen.ro[https://ieugen.ro] (__[red]#Rebooting - migrating to CryogenWeb, a {Clojure} static web generator#)__]
-* blog.ieugen.ro [https://blog.ieugen.ro/[https://blog.ieugen.ro/]  (__[red]#planned migration to ieugen.ro/blog#__)]
+* ieugen [https://ieugen.ro[https://ieugen.ro]]
+* blog.ieugen.ro [https://blog.ieugen.ro/[https://blog.ieugen.ro/]  (__[red]#old, will migrate to ieugen.ro#__)]
 // * {uri-netdava}[netdava.com] __([red]#company website#)__
 
 Social Media::

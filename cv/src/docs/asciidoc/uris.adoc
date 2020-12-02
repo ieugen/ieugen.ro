@@ -131,6 +131,7 @@
 :uri-scrum: https://www.scrum.org/resources/what-is-scrum
 // Identity management
 :uri-ldap: https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol
+:uri-freeipa: https://freeipa.org/
 :uri-samba: https://www.samba.org/
 :uri-identity-management: https://en.wikipedia.org/wiki/Identity_management
 :uri-sso: https://en.wikipedia.org/wiki/Single_sign-on
@@ -184,9 +185,10 @@
 
 :uri-mobilpay: https://netopia-payments.com
 :uri-manychat: https://manychat.com/
+:uri-silferbots: https://silferbots.co/
 :uri-facebook: https://facebook.com/
 :uri-facebook-messenger: https://messenger.com/
-
+:uri-ofx-net: https://www.ofx.net/
 
 :uri-apache-foundation: https://www.apache.org/
 :uri-apache-committer: https://people.apache.org/committer-index.html#ieugen
@@ -252,6 +254,8 @@
 // Other
 :uri-swarm: https://docs.docker.com/engine/swarm/
 :uri-kubernetes: https://kubernetes.io/
+:uri-prometheus: https://prometheus.io/
+:uri-grafana: https://grafana.com/
 :uri-helm: https://helm.sh/
 :uri-kubespray: https://kubespray.io/#/
 :uri-terraform: https://www.terraform.io/

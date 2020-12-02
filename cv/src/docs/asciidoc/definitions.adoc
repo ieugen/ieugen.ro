@@ -6,6 +6,7 @@
 :MyTwitter: {uri-ieugen-twitter}[@{MyID}222]
 :MyLocation: Bucharest/România
 :MyGitHub: {uri-github-account}[my github account]
+:ieugen-ro: {uri-ieugen}[https://ieugen.ro]
 
 // Courses
 
@@ -28,9 +29,11 @@
 :Netdava: {uri-netdava}[Netdava]
 :Robomarketing: {uri-robomarketing}[Robomarketing.ro]
 :Manychat: {uri-manychat}[Manychat]
+:Silferbots: {uri-silferbots}[Silferbots]
 :Mobilpay: {uri-mobilpay}[Netopia Mobilpay]
 :Facebook: {uri-facebook}[Facebook]
 :Messenger: {uri-facebook-messenger}[Facebook Messenger]
+:OpenFinancialExchange: {uri-ofx-net} [Open Financial Exchange]
 
 :Cloudera: {uri-cloudera}[Cloudera]
 :RedHat: {uri-redhat}[Red Hat]
@@ -96,6 +99,8 @@
 :Docker: {uri-docker}[Docker]
 :Swarm: {uri-swarm}[Swarm]
 :Kubernetes: {uri-kubernetes}[Kubernetes]
+:Prometheus: {uri-prometheus}[Prometheus]
+:Grafana: {uri-grafana}[Grafana]
 :helm: {uri-helm}[Helm]
 :kubespray: {uri-kubespray}[Kubespray]
 :terraform: {uri-terraform}[HashiCorp Terraform]
@@ -117,6 +122,7 @@
 :bitbucket: {uri-bitbucket}[Bitbucket]
 :jira: {uri-jira}[Jira]
 :ldap: {uri-ldap}[LDAP]
+:FreeIPA: {uri-freeipa}[FreeIPA]
 :Samba: {uri-samba}[Samba]
 :IdentityManagement: {uri-identity-management}[Identity Management]
 :SSO: {uri-sso}[Single Sign on]
