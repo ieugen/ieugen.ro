@@ -93,3 +93,34 @@ div.paragraph p {
 a.post-tag {
   padding: 0 2px;
 }
+
+#tag-cloud {
+  width: 400px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  }
+  .no-border {
+    border: 0 !important;
+    box-shadow: none !important;
+    width: 100%;
+    height: 100%;
+    margin:0 !important;
+    padding: 0 !important;
+  }
+  .space {
+    width: 400px;
+    height: 300px;
+  }
+  .anychart-credits {
+    display: none;
+  }
+  #tag-cloud svg.anychart-ui-support {
+    margin-left: -100px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    #tag-cloud {
+      display: none;
+    }
+  }
