@@ -119,8 +119,18 @@ a.post-tag {
     margin-left: -100px;
   }
 
+  .search-wrapper {
+    margin-top: 0 !important;
+    margin-bottom: 40px;
+  }
+  #searchResults {
+    margin-top: 5px;
+    text-align: left;
+  }
+
   @media only screen and (max-width: 767px) {
     #tag-cloud {
       display: none;
     }
   }
+

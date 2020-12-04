@@ -14,13 +14,14 @@
 {% endblock %}
 {% block content %}
 <div class="ui text container">
-    <h1 class="ui dividing header">{{page.title}}</h1>
+    <h1 class="ui dividing header">{{post.title}}</h1>
     <div id="post">
         {% include "/html/post-content.html" %}
         <div id="prev-next">
             {% if post.prev %}
             <a href="{{post.prev.uri}}">&laquo; {{post.prev.title}}</a>
             {% endif %}
+            <br/>
             {% if post.next %}
             <a class="right" href="{{post.next.uri}}">{{post.next.title}} &raquo;</a>
             {% endif %}

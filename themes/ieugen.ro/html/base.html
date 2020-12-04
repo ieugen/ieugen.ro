@@ -77,7 +77,6 @@
             </h1>
         </div>
 
-
         <div class="ui secondary five item main menu">
             <div class="ui text container">
                 <a href="{{index-uri}}" class="item">Home</a>
@@ -86,6 +85,17 @@
                 <a href="{{index-uri}}pages/about" class="item">About</a>
                 <a href="{{index-uri}}cv/en" class="ui item button" target="_blank"><i
                         class="external alternate small icon"></i>CV</a>
+            </div>
+        </div>
+        <div class="ui main text container right aligned search-wrapper">
+            <!--- Search from -->
+            <form id="lunrSearchForm" name="lunrSearchForm" class="ui form">
+                <div class="ui icon input">
+                    <input class="search-input" name="q" placeholder="Search..." type="text">
+                    <i class="search icon"></i>
+                </div>
+            </form>
+            <div id="searchResults" class="ui cards">
             </div>
         </div>
 
@@ -127,7 +137,7 @@
                     <p>
                         <a href="https://github.com/ieugen" target="_blank"><i class="large github icon"></i></a>
                         <a href="https://www.linkedin.com/in/ieugen" target="_blank"><i
-                            class="large linkedin icon"></i></a>
+                                class="large linkedin icon"></i></a>
                         <a href="https://gitlab.com/ieugen" target="_blank"><i class="large gitlab icon"></i></a>
                         <a href="https://twitter.com/ieugen222" target="_blank"><i class="large twitter icon"></i></a>
                         <a href="https://www.facebook.com/ieugen222" target="_blank"><i
@@ -175,14 +185,19 @@
 ];
         var new_data = [];
         var parse_tags_data = data.map(tag => {
-            new_data.push({ "x": tag.name, "value": tag.count });
+            new_data.push({ "x": tag.name, "value": tag.count, "link": "https://ieugen.ro/"+tag.name });
             return new_data;
         });
         console.log("tyyyy", new_data);
         // create a tag (word) cloud chart
         var chart = anychart.tagCloud(new_data);
+        chart.listen('pointClick', function (e) {
+        if (e.point.get('link') != undefined) {
+        window.open(e.point.get('link'));
+         }
+        });
         // set an array of angles at which the words will be laid out
-        chart.angles([0,90]);
+        chart.angles([0, 90]);
         // enable a color range
         chart.colorRange(false);
         // display the word cloud chart
