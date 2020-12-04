@@ -3,17 +3,15 @@
 
 
 <div class="ui main text container">
+    <div class="ui segment borderless no-border mobile only">
+        <div class="ui right rail space">
+            <div id="tag-cloud"></div>
+        </div>
+    </div>
 
     <h1 class="ui dividing header">{{page.title}}</h1>
 
-    <!--- Search from -->
-    <form id="lunrSearchForm" name="lunrSearchForm" action="/pages/articles" class="ui form">
-        <div class="ui action mini input">
-            <input class="search-input" name="q" placeholder="Search article..." type="text">
-            <button class="ui button"><i class="search icon"></i></button>
-        </div>
-    </form>
-
+ 
     <div class="ui relaxed small divided list items">
         <div id="searchResults" class="ui cards">
             {% block content %}
@@ -50,4 +48,5 @@
 
 
 </div>
+
 {% endblock %}

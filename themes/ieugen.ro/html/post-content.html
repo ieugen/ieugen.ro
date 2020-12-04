@@ -1,16 +1,13 @@
 <div class="post-header">
     <div id="post-meta" class="ui-grid">
-        <div class="row">
-            {{post.date|date:longDate}}
+        {{post.date|date:longDate}} -
+        {% if post.lang %}
+        <div class="ui basic tag medium label">
+            <i class="language icon"></i> <div class="detail">{{post.lang}}</div>
         </div>
-        <div class="row">
-            <h2>{{post.title}}</h2>
-        </div>
-        <!-- {% if post.author %}
-        <span class="four wide column">By: {{post.author}}</span>
-        {% endif %} -->
+        {% endif %}
     </div>
-   
+
 </div>
 <div>
     {% if post.toc %}{{post.toc|safe}}{% endif %}
