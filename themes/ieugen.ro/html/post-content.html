@@ -1,10 +1,11 @@
 <div class="post-header">
     <div id="post-meta" class="ui-grid">
-        {{post.date|date:longDate}} -
-        {% if post.lang %}
-        <div class="ui basic tag medium label">
-            <i class="language icon"></i> <div class="detail">{{post.lang}}</div>
+        <div class="ui basic medium label">
+            <i class="globe icon"></i> <div class="detail">{{post.lang}}</div>
         </div>
+       - {{post.date|date:"dd MMM, yyyy":post.lang}}
+        {% if post.lang %}
+      
         {% endif %}
     </div>
 
