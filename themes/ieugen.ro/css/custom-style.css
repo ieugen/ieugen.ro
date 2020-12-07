@@ -115,9 +115,7 @@ a.post-tag {
   .anychart-credits {
     display: none;
   }
-  #tag-cloud svg.anychart-ui-support {
-    margin-left: -100px;
-  }
+
 
   .search-wrapper {
     margin-top: 0 !important;
