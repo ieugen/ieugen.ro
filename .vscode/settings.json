@@ -1,0 +1,14 @@
+{
+    "spellright.language": [],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "cSpell.enableFiletypes": [
+        "asciidoc"
+    ],
+    "cSpell.words": [
+        "timeclock"
+    ]
+}
