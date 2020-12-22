@@ -10,21 +10,13 @@
    [cryogen-core.compiler :refer [compile-assets-timed]]
    [cryogen-core.config :refer [resolve-config]]
    [cryogen-core.io :refer [path]]
+   [cryogen.customization :as custom]
    [clj-livereload.server :as live-reload]
    ))
 
 (defn init []
   (load-plugins)
-  (compile-assets-timed {:extend-params-fn
-                         (fn extend-params [params site-data]
-                           (let [tag-count (->> (:posts-by-tag site-data)
-                                                (map (fn [[k v]] [k (count v)]))
-                                                (into {}))]
-                             (update
-                              params :tags
-                              #(map (fn [t] (assoc t
-                                                   :count (tag-count (:name t))))
-                                    %))))})
+  (compile-assets-timed {:extend-params-fn custom/extend-params})
   (let [ignored-files (-> (resolve-config) :ignored-files)
         public-dest (-> (resolve-config) :public-dest)]
     (start-watcher! "content" ignored-files compile-assets-timed)

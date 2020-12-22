@@ -11,11 +11,10 @@
 
     <h1 class="ui dividing header">{{page.title}}</h1>
 
- 
     <div class="ui relaxed small divided list items">
         <div id="searchResults" class="ui cards">
             {% block content %}
-            {% for post in latest-posts %}
+            {% for post in posts %}
             <div class="ui card fluid">
                 <div class="content">
                     <div class="header"><a href="{{post.uri}}">{{post.title}}</a></div>
