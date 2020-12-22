@@ -35,10 +35,13 @@
                     <div class="content">
                         <div class="header"><a href="{{post.uri}}">{{post.title}}</a></div>
                         <div class="description">
-                            <span>{{post.date|date:"dd MMM, yyyy":post.lang}}</span>
+                            <div class="ui basic medium label">
+                                <i class="globe icon"></i> <div class="detail">{{post.lang}}</div>
+                            </div>
+                            <span> - {{post.date|date:"dd MMM, yyyy":post.lang}}</span>
                         </div>
-                        <div class="meta">
-                            <div class="description">
+                        <div class="meta padded">
+                            <div class="description padded">
                                 {% if post.description %}
                                 {{post.description}}
                                 {% endif %}
@@ -57,6 +60,10 @@
                 {% endfor %}
             </div>
         </div>
+        <button class="ui primary button" href="{{index-uri}}pages/articles">
+            <i class="newspaper outline icon"></i>
+            All articles...
+        </button>
 </div>
 
 {% endblock %}

@@ -14,12 +14,12 @@
     {% style "css/normalize.css" %}
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
     {% style "css/custom-style.css" %}
-
     {% if any page.klipse post.klipse %}
     <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
     {% endif %}
@@ -97,13 +97,13 @@
         </div>
         <div class="ui main text container right aligned search-wrapper">
             <!--- Search from -->
-            <form id="lunrSearchForm" name="lunrSearchForm" class="ui form">
+            <form id="lunrSearchForm" name="lunrSearchForm" class="ui form" action="/pages/search">
                 <div class="ui icon input">
                     <input class="search-input" name="q" placeholder="Search..." type="text">
                     <i class="search icon"></i>
                 </div>
             </form>
-            <div id="searchResults" class="ui cards">
+            <div id="searchResults" class="ui cards"></div>
             </div>
         </div>
 
@@ -154,7 +154,7 @@
                                 class="large instagram icon"></i></a>
                     </p>
                     <p>I am looking for challanging projects.</p>
-                    <p>Drop me aline and I will get back to you.</p>
+                    <p>Drop me a line and I will get back to you.</p>
                 </div>
             </div>
         </div>
