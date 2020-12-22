@@ -40,8 +40,8 @@
                             </div>
                             <span> - {{post.date|date:"dd MMM, yyyy":post.lang}}</span>
                         </div>
-                        <div class="meta">
-                            <div class="description">
+                        <div class="meta padded">
+                            <div class="description padded">
                                 {% if post.description %}
                                 {{post.description}}
                                 {% endif %}
@@ -60,6 +60,10 @@
                 {% endfor %}
             </div>
         </div>
+        <button class="ui primary button" href="{{index-uri}}pages/articles">
+            <i class="newspaper outline icon"></i>
+            All articles...
+        </button>
 </div>
 
 {% endblock %}

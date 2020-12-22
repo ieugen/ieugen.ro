@@ -1,0 +1,15 @@
+{% extends "/html/base.html" %}
+{% block content %}
+<div class="ui main text container vertical segment">
+    <div>
+        <p><div class="resultCount" id="resultCount"></div></p>
+
+        <div class="ui divider"></div>
+        <div id="searchResults">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
