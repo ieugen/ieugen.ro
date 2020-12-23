@@ -104,7 +104,8 @@ function buildPreviews(docs) {
             "t": doc["t"],
             "p": preview,
             "l": doc["link"],
-            "post-date": doc["post-date"]
+            "post-date": doc["post-date"],
+            "d": doc["d"]
         }
     }
     return result;

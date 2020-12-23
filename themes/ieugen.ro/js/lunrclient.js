@@ -27,10 +27,19 @@ function parseLunrResults(results) {
         var title = item["t"];
         var preview = item["p"];
         var link = item["l"];
+        var description = item["d"];
         var post_date = item["post-date"]
-        var result = ('<div class="ui card fluid"><div class="content"><div class="header"><a href="/' + link + '">'
-                    + title + '</a></div><div class="description"><span>' + post_date +'</span></div><div class="meta"><span class="result-preview description">'
-                    + preview  + '</span></div></div></div>');
+        var result = (`<div class="ui card fluid">
+                            <div class="content">
+                                <div class="header"><a href="/' + link + '">` + title + `</a></div>
+                                <div class="description">
+                                    <span>` + post_date +`</span>
+                                </div>
+                                <div class="meta">
+                                    <span class="result-preview description">`+ description  + `</span>
+                                </div>
+                            </div>
+                        </div>`);
 
         html.push(result);
     }
