@@ -16,7 +16,11 @@
 {% block content %}
 <div class="ui main text container">
         <h1 class="ui dividing header">{{page.title}}</h1>
-        {% if page.toc %}{{page.toc|safe}}{% endif %} {{page.content|safe}}
+        {% if page.toc %}
+          {{page.toc|safe}}
+        {% endif %}
+
+        {{page.content|safe}}
 </div>
 
 {% endblock %}
