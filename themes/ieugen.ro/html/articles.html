@@ -14,14 +14,14 @@
     <div class="ui relaxed small divided list items">
         <div id="searchResults" class="ui cards">
             {% block content %}
-            {% for post in posts %}
+            {% for post in all-my-posts %}
             <div class="ui card fluid">
                 <div class="content">
                     <div class="header"><a href="{{post.uri}}">{{post.title}}</a></div>
                     <div class="description">
-                        <div class="ui basic medium label">
-                            <i class="globe icon"></i> <div class="detail">{{post.lang}}</div>
-                        </div>
+                        <span class="ui basic medium label">
+                            <i class="globe icon"></i> <span class="detail">{{post.lang}}</span>
+                        </span>
                         <span> - {{post.date|date:"dd MMM, yyyy":post.lang}}</span>
                     </div>
                     <div class="meta padded">

@@ -1,5 +1,5 @@
 (ns cryogen.server
-  (:require 
+  (:require
    [clojure.string :as string]
    [compojure.core :refer [GET defroutes]]
    [compojure.route :as route]
@@ -10,21 +10,24 @@
    [cryogen-core.compiler :refer [compile-assets-timed]]
    [cryogen-core.config :refer [resolve-config]]
    [cryogen-core.io :refer [path]]
-   [cryogen.customization :as custom]
-   [clj-livereload.server :as live-reload]
-   ))
+   [cryogen.customization :as c]
+   [clj-livereload.server :as live-reload]))
+
+
+
 
 (defn init []
   (load-plugins)
-  (compile-assets-timed {:extend-params-fn custom/extend-params})
   (let [ignored-files (-> (resolve-config) :ignored-files)
-        public-dest (-> (resolve-config) :public-dest)]
-    (start-watcher! "content" ignored-files compile-assets-timed)
-    (start-watcher! "themes" ignored-files compile-assets-timed)
+        public-dest (-> (resolve-config) :public-dest)
+        cate (fn compile-assets-timed-extend []
+               (compile-assets-timed {:extend-params-fn c/extend-params}))]
+    (cate)
+    (start-watcher! "content" ignored-files cate)
+    (start-watcher! "themes" ignored-files cate)
     (println (str "Start Live Reload " public-dest))
     (live-reload/start! {:paths [public-dest]
-                         :debug? true}))
-  )
+                         :debug? true})))
 
 (defn wrap-subdirectories
   [handler]
