@@ -246,3 +246,27 @@ div.paragraph p {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.type-writer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+@media(min-width: 1200px) {
+  .txt-type {
+    min-height: 36px;
+  }
+}
+@media(max-width: 500px) {
+  .txt-type {
+    min-height: 80px;
+  }
+  .txt-type .txt {
+    font-size: 24px;
+  }
+  .main.menu {
+    margin-top: 1.5em;
+  }
+}
