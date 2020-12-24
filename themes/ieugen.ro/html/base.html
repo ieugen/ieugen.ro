@@ -14,7 +14,7 @@
     {% style "css/normalize.css" %}
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
@@ -68,7 +68,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVN6DGJ2E6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-VVN6DGJ2E6');
     </script>
@@ -80,7 +80,10 @@
             <h1 class="ui header">
                 <img class="ui middle aligned tiny image" src="/img/logos/ieugen-logo.svg">
                 <a href="{{index-uri}}" class="header-title">
-                    <code>{{title}}</code>
+                    <div class="type-writer-wrapper">
+                        <span class="txt-type" data-wait="1000"
+                            data-words='["function() { ", "(defn Eugen-Stan [_] awesome)"]'></span>
+                    </div>
                 </a>
             </h1>
         </div>
@@ -104,11 +107,11 @@
                 </div>
             </form>
             <div id="searchResults" class="ui cards"></div>
-            </div>
         </div>
+    </div>
 
-        {% block content %}
-        {% endblock %}
+    {% block content %}
+    {% endblock %}
     </div>
 
     <footer class="ui Site inverted vertical footer segment">
@@ -184,25 +187,36 @@
     <!-- <script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script> -->
     {% endif %}
     {% script "js/tag-cloud.js" %}
+    {% script "js/title-animation.js" %}
+    <!-- <script>
+        if ('querySelector' in document && 'addEventListener' in window) {
+            var script = document.createElement('script');
+            script.src = '/js/animation.js';
+            var ref = document.querySelector('script');
+            ref.parentNode.insertBefore(script, ref);
+        } else {
+            var title = document.getElementsByClassName('txt-type');
+            title.innerHTML = '(defn Eugen-Stan [_] awesome)';
+        }
+    </script> -->
     <script type="text/javascript">
         anychart.onDocumentReady(function () {
             var data = [
                 {% for tag in tags %}
-        {{tag|json|safe}},
+        {{ tag|json|safe }},
             {% endfor %}
 ];
         var new_data = [];
         var parse_tags_data = data.map(tag => {
-            new_data.push({ "x": tag.name, "value": tag.count, "link": "https://ieugen.ro/"+tag.name });
+            new_data.push({ "x": tag.name, "value": tag.count, "link": "https://ieugen.ro/" + tag.name });
             return new_data;
         });
-        console.log("tyyyy", new_data);
         // create a tag (word) cloud chart
         var chart = anychart.tagCloud(new_data);
         chart.listen('pointClick', function (e) {
-        if (e.point.get('link') != undefined) {
-        window.open(e.point.get('link'));
-         }
+            if (e.point.get('link') != undefined) {
+                window.open(e.point.get('link'));
+            }
         });
         // set an array of angles at which the words will be laid out
         chart.angles([0, 90]);
@@ -212,7 +226,6 @@
         chart.container("tag-cloud");
         chart.draw();
         });
-
     </script>
 </body>
 
