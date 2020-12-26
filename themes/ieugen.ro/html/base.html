@@ -33,9 +33,8 @@
     <script src="https://unpkg.com/lunr/lunr.js"></script>
     <script src="/js/index/lunr_index.js"></script>
     <script src="/js/lunrclient.js"></script>
-    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
     {% script "js/scripts.js" %}
+    {% script "js/tagcloud.js" %}
     <script>window.onload = start;</script>
     <script>
         $(document)
@@ -78,7 +77,7 @@
     <div class="content">
         <div class="ui main text center aligned container">
             <h1 class="ui header">
-                <img class="ui middle aligned tiny image" src="/img/logos/ieugen-logo.svg">
+                <img class="ui middle aligned image ieugen-logo" src="/img/logos/ieugen-logo.svg">
                 <a href="{{index-uri}}" class="header-title">
                     <div class="type-writer-wrapper">
                         <span class="txt-type" data-wait="1000"
@@ -112,6 +111,14 @@
 
     {% block content %}
     {% endblock %}
+
+    <div class="ui main text segment container tag-cloud-wrapper-mobile">
+        <h3 class="ui dividing header tag-cloud-title">Tag cloud</h3>
+        <div id="tagcloud">
+            {% for tag in tags %}
+            <a href="{{tag.uri}}" rel="{{tag.count}}" class="cloud-tag">{{tag.name}}</a>
+            {% endfor %}
+        </div>
     </div>
 
     <footer class="ui Site inverted vertical footer segment">
@@ -161,7 +168,7 @@
                 </div>
             </div>
         </div>
-        <div class="ui horizaontal divider"></div>
+        <div class="ui horizontal divider"></div>
         <div class="ui center aligned text container">
             <span>Copyright &copy; {{today|date:yyyy}} {{author}}</span>
             |
@@ -199,32 +206,9 @@
             title.innerHTML = '(defn Eugen-Stan [_] awesome)';
         }
     </script> -->
-    <script type="text/javascript">
-        anychart.onDocumentReady(function () {
-            var data = [
-                {% for tag in tags %}
-        {{ tag|json|safe }},
-            {% endfor %}
-];
-        var new_data = [];
-        var parse_tags_data = data.map(tag => {
-            new_data.push({ "x": tag.name, "value": tag.count, "link": "https://ieugen.ro/" + tag.name });
-            return new_data;
-        });
-        // create a tag (word) cloud chart
-        var chart = anychart.tagCloud(new_data);
-        chart.listen('pointClick', function (e) {
-            if (e.point.get('link') != undefined) {
-                window.open(e.point.get('link'));
-            }
-        });
-        // set an array of angles at which the words will be laid out
-        chart.angles([0, 90]);
-        // enable a color range
-        chart.colorRange(false);
-        // display the word cloud chart
-        chart.container("tag-cloud");
-        chart.draw();
+    <script>
+        $("#tagcloud a").tagcloud({
+            size: { start: 14, end: 28, unit: "px" }, color: { start: '#4d5763', end: '#4183c4' }
         });
     </script>
 </body>

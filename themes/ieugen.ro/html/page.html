@@ -16,6 +16,19 @@
 {% block content %}
 <div class="ui main text container">
         <h1 class="ui dividing header">{{page.title}}</h1>
+        <div class="ui segment borderless no-border tag-cloud-wrapper-desktop">
+          <div class="ui right rail">
+              <h3 class="ui header tag-cloud-title">Tag cloud</h3>
+              <div class="ui segment">
+                  <div id="tagcloud">
+                      {% for tag in tags %}
+                      <a href="{{tag.uri}}" rel="{{tag.count}}" class="cloud-tag">{{tag.name}}</a>
+                      {% endfor %}
+
+                  </div>
+              </div>
+          </div>
+      </div>
         {% if page.toc %}
           {{page.toc|safe}}
         {% endif %}

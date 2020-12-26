@@ -20,6 +20,10 @@ body {
 .main.menu .item img.logo {
   margin-right: 1.5em;
 }
+.ieugen-logo {
+  width: 150px;
+  padding: 15px;
+}
 
 .overlay {
   float: left;
@@ -124,10 +128,6 @@ a.post-tag {
   height: 300px;
 }
 
-.anychart-credits {
-  display: none;
-}
-
 .search-wrapper {
   margin-top: 0 !important;
   margin-bottom: 40px;
@@ -181,7 +181,7 @@ div.paragraph p {
 
 .admonitionblock>table td.icon {
   text-align: center;
-  width: 80px;
+  width: 80px !important;
 }
 
 .admonitionblock>table td.icon img {
@@ -259,6 +259,14 @@ div.paragraph p {
     min-height: 36px;
   }
 }
+@media(min-width: 500px) {
+  .tag-cloud-wrapper-mobile {
+    display: none !important;
+  }
+  .no-content {
+    min-height: 400px;
+  }
+}
 @media(max-width: 500px) {
   .txt-type {
     min-height: 80px;
@@ -269,4 +277,16 @@ div.paragraph p {
   .main.menu {
     margin-top: 1.5em;
   }
+  .tag-cloud-wrapper-desktop {
+    display: none;
+  }
 }
+.cloud-tag {
+  text-shadow: 0 1px 0 #fff;
+  margin-right: 5px;
+  line-height: 1.6em;
+}
+.cloud-tag:hover {
+  text-decoration: underline;
+}
+
