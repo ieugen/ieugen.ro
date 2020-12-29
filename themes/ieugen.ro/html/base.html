@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>{{title}}{% block subtitle %}{% endblock %}</title>
+    <title>
+        {% if page.title %} {{page.title}} {% endif %}
+        {% if post.title %} {{post.title}} {% endif %}
+        {{title}}
+    </title>
     <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
     {% block meta %}
@@ -177,9 +181,13 @@
             <span>Hosting by <a href="https://www.netlify.com/">Netlify</a></span>
         </div>
     </footer>
-    </div>
+    <!-- <div class="blue message cookie-container">
+        <p>We use cookies because we like them</p>
+        <div class="ui primary button cookie-btn">Ok</div>
+    </div> -->
 
     {% script "js/highlight.pack.js" %}
+    {% script "js/cookies-banner.js" %}
     <script>
         hljs.initHighlightingOnLoad();
     </script>

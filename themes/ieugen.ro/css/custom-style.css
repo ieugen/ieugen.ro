@@ -289,4 +289,29 @@ div.paragraph p {
 .cloud-tag:hover {
   text-decoration: underline;
 }
-
+.cookie-container {
+  position: fixed;
+  background-color: #f8ffff;
+  color: #4183c4;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  padding: 10px 32px;
+  transition: 400ms;
+  box-shadow: 0 0 0 1px #2185d0 inset, 0 0 0 0 transparent;
+  width: 98%;
+  margin: 0 auto;
+}
+.cookie-container.active {
+  bottom: 0;
+}
+.cookie-btn {
+  background: #e84118;
+  color: #f5f6fa;
+  border: 0;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
