@@ -46,9 +46,9 @@ npm i -g asciidoctor
 cd cv/
 
 # Export to HTML
-asciidoctor -a includedir=. -a published-cv="https://ieugen.ro/cv/en" -a langName='English' -D . asciidoc/en/index.adoc
+asciidoctor -a includedir=. -a published-cv="https://ieugen.ro/cv/en" -a langName='English' -D ../content/cv/en asciidoc/en/index.adoc
 
 # Export to pdf
-asciidoctor-pdf -a includedir=. -a published-cv="https://ieugen.ro/cv/en" -a langName='English' -D . asciidoc/en/index.adoc
+asciidoctor-pdf -a includedir=. -a published-cv="https://ieugen.ro/cv/en" -a langName='English' -D ../content/cv/en -o cv.pdf asciidoc/en/index.adoc
 
 --

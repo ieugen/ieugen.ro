@@ -22,8 +22,7 @@ include::{includedir}/../definitions.adoc[]
 ifdef::backend-html5[]
 [NOTE]
 ====
-Download the link:cv.pdf[printable (PDF) version] ({published-cv}/cv.pdf). +
-You can also download the link:cv.txt[plain text (txt) version] ({published-cv}/cv.txt).
+Download the link:cv.pdf[printable (PDF) version] ({published-cv}/cv.pdf).
 
 This CV is written in {AsciiDoc} format.
 Its source code is available at <<cv,cv repository>> on {MyGitHub}.
