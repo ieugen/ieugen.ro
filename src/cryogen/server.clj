@@ -1,16 +1,16 @@
 (ns cryogen.server
-  (:require
-    [compojure.core :refer [GET defroutes]]
-    [compojure.route :as route]
-    [ring.util.response :refer [redirect file-response]]
-    [ring.util.codec :refer [url-decode]]
-    [ring.server.standalone :as ring-server]
-    [cryogen-core.watcher :refer [start-watcher! start-watcher-for-changes!]]
-    [cryogen-core.plugins :refer [load-plugins]]
-    [cryogen-core.compiler :refer [compile-assets-timed]]
-    [cryogen-core.config :refer [resolve-config]]
-    [cryogen-core.io :refer [path]]
-    [clojure.string :as string])
+  (:require [clojure.string :as string]
+            [compojure.core :refer [defroutes GET]]
+            [compojure.route :as route]
+            [cryogen-core.compiler :refer [compile-assets-timed]]
+            [cryogen-core.config :refer [resolve-config]]
+            [cryogen-core.io :refer [path]]
+            [cryogen-core.plugins :refer [load-plugins]]
+            [cryogen-core.watcher :refer [start-watcher!
+                                          start-watcher-for-changes!]]
+            [ring.server.standalone :as ring-server]
+            [ring.util.codec :refer [url-decode]]
+            [ring.util.response :refer [file-response redirect]])
   (:import (java.io File)))
 
 (def resolved-config (delay (resolve-config)))
@@ -24,10 +24,23 @@
   (compile-assets-timed extra-config-dev)
   (let [ignored-files (-> @resolved-config :ignored-files)]
     (run!
-      #(if fast?
-         (start-watcher-for-changes! % ignored-files compile-assets-timed extra-config-dev)
-         (start-watcher! % ignored-files compile-assets-timed))
-      ["content" "themes"])))
+     #(if fast?
+        (start-watcher-for-changes! % ignored-files compile-assets-timed extra-config-dev)
+        (start-watcher! % ignored-files compile-assets-timed))
+     ["content" "themes"])))
+
+#_(defn init []
+  (load-plugins)  
+  (let [ignored-files (-> (resolve-config) :ignored-files)
+        public-dest (-> (resolve-config) :public-dest)
+        do-compile (fn [] (compile-assets-timed {:extend-params-fn custom/extend-params}))]
+    (do-compile)
+    (start-watcher! "content" ignored-files do-compile)
+    (start-watcher! "themes" ignored-files do-compile)
+    (println (str "Start Live Reload " public-dest))
+    (live-reload/start! {:paths [public-dest]
+                         :debug? true}))
+  )
 
 (defn wrap-subdirectories
   [handler]
