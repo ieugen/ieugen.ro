@@ -28,3 +28,27 @@ Citește documentația de acolo cel puțin o dată.
     # Pornește situl în mod dezvoltare - randează paginile instant
     lein ring server
 --
+
+
+=== Conversie CV
+
+Momentan CV-ul este scris în AsciiDoc.
+Folosim unealta CLI asciidoctorjs pentru conversie:
+
+https://docs.asciidoctor.org/asciidoctor.js/latest/cli/install/
+
+[source,shell]
+--
+# instalăm asciidoctor
+npm i -g asciidoctor
+
+# Convertim versiunea en în HTML
+cd cv/
+
+# Export to HTML
+asciidoctor -a includedir=. -a published-cv="https://ieugen.ro/cv/en" -a langName='English' -D . asciidoc/en/index.adoc
+
+# Export to pdf
+asciidoctor-pdf -a includedir=. -a published-cv="https://ieugen.ro/cv/en" -a langName='English' -D . asciidoc/en/index.adoc
+
+--
