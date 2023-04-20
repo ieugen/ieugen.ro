@@ -1,8 +1,10 @@
-{:title "Setting sites under maintenance"}
+{:title "Setting sites under maintenance"
+ :draft? true
+ :description "We have sites under maintenance functionality here and we provide it by making a file available under a specific path."}
 
 == Sites under maintenance
 
-We also have sites under maintenance functionality here and we provide it by making a file available under a specific path.
+We have sites under maintenance functionality here and we provide it by making a file available under a specific path.
 See gatway.cfg for details.
 
 To put https://blog.ieugen.ro/ under maintenance, you need to copy `/usr/share/nginx/html/maintenance.html` to `/data/html/maintenance.beta.html`.
