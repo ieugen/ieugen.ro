@@ -10,7 +10,7 @@ const HTML_FOLDER = "public/posts";  // folder with your HTML files
 const SEARCH_FIELDS = ["title", "description", "keywords", "body"];
 const EXCLUDE_FILES = ["search.html"];
 const MAX_PREVIEW_CHARS = 275;  // Number of characters to show for a given search result
-const OUTPUT_INDEX = "themes/ieugen.ro/js/index/lunr_index.js";  // Index file
+const OUTPUT_INDEX = "public/js/lunr_index.js";  // Index file
 var SEARCH_FIELD_BOOSTS = {title: 2, description: 1.3};
 
 
@@ -56,7 +56,7 @@ function readHtml(root, file, fileId) {
     var parsed_title = $("meta[property='og:title']").attr("content");
     var post_date = $("meta[property='og:date']").attr("content");
 
-  
+
     if (typeof title == 'undefined') title = file;
     var description = $("meta[name=description]").attr("content");
     if (typeof description == 'undefined') description = "";

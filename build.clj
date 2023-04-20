@@ -8,8 +8,12 @@
   (b/delete {:path "public"}))
 
 (defn site [_]
+  (println "npm installing...")
+  (b/process {:command-args ["npm" "install"]})
   (println "Cryogen website")
   (c/build-site)
   (println "Copy files")
   (b/copy-dir {:src-dirs ["node_modules/cookieconsent/build"]
-               :target-dir "public/vnd/cookieconsent"}))
+               :target-dir "public/vnd/cookieconsent"})
+  (println "Build static search index")
+  (b/process {:command-args ["node" "src/build-index.js"]}))
