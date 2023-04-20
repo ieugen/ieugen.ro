@@ -19,6 +19,14 @@ Citește documentația de acolo cel puțin o dată.
 
     # Pornește situl în mod dezvoltare - randează paginile instant
     clojure -X:serve
+
+    # Construim situl
+    clojure -T:build site -Dclojure.main.report=stderr
+
+    # Deploy manual al sitului - probă
+    netlify deploy --dir public
+    # Deploy manual al sitului pe producție
+    netlify deploy --dir public --prod
 --
 
 

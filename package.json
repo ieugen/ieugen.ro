@@ -10,6 +10,7 @@
     "moment": "^2.29.1"
   },
   "devDependencies": {
+    "netlify-cli": "^14.2.1",
     "sass": "^1.62.0"
   },
   "scripts": {

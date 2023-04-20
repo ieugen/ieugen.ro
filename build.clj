@@ -7,7 +7,7 @@
 (defn clean [_]
   (b/delete {:path "public"}))
 
-(defn site [_]
+(defn site [_] 
   (println "npm installing...")
   (b/process {:command-args ["npm" "install"]})
   (println "Cryogen website")
