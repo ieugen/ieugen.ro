@@ -1,17 +1,24 @@
-{:deps {org.clojure/clojure {:mvn/version "1.11.1"}
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
         ring-server/ring-server {:mvn/version "0.5.0"}
         ring/ring-devel {:mvn/version "1.10.0"}
         compojure/compojure {:mvn/version "1.7.0"}
         cryogen-asciidoc/cryogen-asciidoc {:mvn/version "0.3.4"}
         cryogen-core/cryogen-core {:mvn/version "0.4.1"}
         selmer/selmer {:mvn/version "1.12.58"}}
- :aliases {;; Run with `clojure -M:build`
-           :build {:main-opts ["-m" "cryogen.core"]}
+ :aliases {;; Run with `clojure -M:build-site`
+           :build-site {:main-opts ["-m" "cryogen.core"]}
+           :build {:paths ["src"]
+                   :deps {babashka/babashka {:mvn/version "1.3.176"}
+                          cryogen-core/cryogen-core {:mvn/version "0.4.1"}
+                          io.github.clojure/tools.build {:mvn/version "0.9.4"}
+                          org.slf4j/slf4j-simple {:mvn/version "2.0.7"}}
+                   :ns-default build}
            ;; Start a server serving the blog: `clojure -X:serve`
            ;; Requires tools.deps.alpha 0.9.810+
            :serve {:exec-fn   cryogen.server/serve
                    :exec-args {:port 3000}
-                   :jvm-args ["--add-opens java.base/sun.nio.ch=ALL-UNNAMED" 
+                   :jvm-args ["--add-opens java.base/sun.nio.ch=ALL-UNNAMED"
                               "--add-opens java.base/java.io=ALL-UNNAMED"]}
            :fast {:exec-args {:fast true}}
            :outdated {;; Note that it is `:deps`, not `:extra-deps`

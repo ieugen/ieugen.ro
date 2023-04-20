@@ -1,6 +1,0 @@
-O să fac
-....
-ca să
-....
-
-/assign @ieugen

@@ -26,10 +26,10 @@
     {% style "css/custom-style.css" %}
     {% if any page.klipse post.klipse %}
     <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
-  
+
     {% endif %}
     <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    href="/vnd/cookieconsent/cookieconsent.min.css" />
 
     <!-- You MUST include jQuery before Fomantic -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
@@ -81,7 +81,7 @@
 </head>
 
 <body>
-    
+
     <div class="content" id="cookieconsent-wrapper">
         <div class="ui main text center aligned container">
             <h1 class="ui header">
@@ -187,7 +187,7 @@
     </footer>
 
     {% script "js/highlight.pack.js" %}
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="/vnd/cookieconsent/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
       "palette": {
