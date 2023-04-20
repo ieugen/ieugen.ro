@@ -1,10 +1,11 @@
+{:title "Setting sites under maintenance"}
 
-==== Sites under maintenance
+== Sites under maintenance
 
 We also have sites under maintenance functionality here and we provide it by making a file available under a specific path.
 See gatway.cfg for details.
 
-To put https://searchbeta.doctorevidence.com/ under maintenance, you need to copy `/usr/share/nginx/html/maintenance.html` to `/data/html/maintenance.beta.html`.
+To put https://blog.ieugen.ro/ under maintenance, you need to copy `/usr/share/nginx/html/maintenance.html` to `/data/html/maintenance.beta.html`.
 
 .Put site under maintenance
 [source,shell]

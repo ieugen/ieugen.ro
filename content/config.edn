@@ -8,6 +8,7 @@
 ;;  :page-root-uri                "pages-output"
 ;;  :tag-root-uri                 "tags-output"
 ;;  :author-root-uri              "authors-output"
+ :asciidoctor {:attributes {"icons" "font"}}
  :public-dest                  "public"
  :blog-prefix                  ""
  :rss-name                     "feed.xml"
