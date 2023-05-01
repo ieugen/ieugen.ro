@@ -21,7 +21,7 @@ Citește documentația de acolo cel puțin o dată.
     clojure -X:serve
 
     # Construim situl
-    clojure -T:build site -Dclojure.main.report=stderr
+    clojure -J-Dclojure.main.report=stderr -T:build site
 
     # Deploy manual al sitului - probă
     netlify deploy --dir public
